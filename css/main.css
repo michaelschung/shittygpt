@@ -1,23 +1,50 @@
 .container {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: stretch;
 }
 
-.section {
-	border: 2px solid black;
+.padded {
+	padding-left: 20px;
 }
 
 .title {
 	flex-grow: 1;
+	border: 2px solid black;
+	text-align: center;
 	font-family: monospace;
 	font-size: 30px;
 	background-color: cornflowerblue;
 }
 
-.content {
+.banner {
+	border: 2px solid black;
+}
+
+.page {
 	flex-grow: 5;
+	border: 2px solid black;
 	font-family: sans-serif;
 	font-size: 15px;
+/*	background-color: bisque;*/
+	
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.sidebar {
+	flex-grow: 1;
 	background-color: bisque;
 }
+
+.content {
+	flex-grow: 4;
+	background-color: lightsalmon;
+}
+
+
+
+
+
+
