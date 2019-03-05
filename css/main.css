@@ -1,11 +1,4 @@
-body {
+#title {
 	font-family: monospace;
-}
-
-p {
-	font-family: cursive;
-}
-
-#hi {
-	font-family: fantasy;
+	font-size: 30px;
 }
