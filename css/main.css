@@ -1,10 +1,15 @@
 .container {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	align-items: stretch;
+}
+
+.section {
+	
 }
 
 .title {
+	border: 1px black;
 	font-family: monospace;
 	font-size: 30px;
 	background-color: cornflowerblue;
