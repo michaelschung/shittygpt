@@ -5,7 +5,7 @@
 }
 
 .padded {
-	padding-left: 20px;
+	padding: 0em 1em .5em;
 }
 
 .title {
@@ -13,24 +13,25 @@
 	border: 2px solid black;
 	text-align: center;
 	font-family: monospace;
-	font-size: 30px;
+	font-size: 3em;
 	background-color: cornflowerblue;
-}
-
-.banner {
-	border: 2px solid black;
 }
 
 .page {
 	flex-grow: 5;
 	border: 2px solid black;
 	font-family: sans-serif;
-	font-size: 15px;
-/*	background-color: bisque;*/
+	font-size: 1em;
 	
+	width: inherit;
 	display: flex;
 	flex-direction: row;
+/*	flex-wrap: wrap;*/
 	align-items: stretch;
+}
+
+.banner {
+	border: 2px solid black;
 }
 
 .sidebar {
@@ -40,7 +41,7 @@
 
 .content {
 	flex-grow: 4;
-	background-color: lightsalmon;
+	background-color: bisque;
 }
 
 
