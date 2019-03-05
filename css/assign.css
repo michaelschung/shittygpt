@@ -37,8 +37,10 @@ li {
 	font-family: sans-serif;
 	font-size: 1em;
 	
+	width: inherit;
 	display: flex;
 	flex-direction: row;
+/*	flex-wrap: wrap;*/
 	align-items: stretch;
 }
 
@@ -50,11 +52,10 @@ li {
 /*	flex-grow: 1;*/
 	width: 25%;
 	background-color: lightsalmon;
-	position: sticky;
 }
 
 .right {
-/*	flex-grow: 5;*/
+/*	flex-grow: 3;*/
 	width: 75%;
 	background-color: bisque;
 }
