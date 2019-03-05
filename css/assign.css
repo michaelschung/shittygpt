@@ -1,0 +1,68 @@
+h4 {
+	text-decoration: underline;
+	margin-top: .8em;
+	margin-bottom: .5em;
+}
+
+ul {
+	margin-top: .5em;
+}
+
+li {
+	margin-bottom: 0.2em;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.padded {
+	padding: 0em 1em .5em;
+}
+
+.title {
+	flex-grow: 1;
+	border: 2px solid black;
+	text-align: center;
+	font-family: monospace;
+	font-size: 3em;
+	background-color: cornflowerblue;
+}
+
+.page {
+	flex-grow: 5;
+	border: 2px solid black;
+	font-family: sans-serif;
+	font-size: 1em;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.col {
+/*	flex-grow: 1;*/
+}
+
+.left {
+/*	flex-grow: 1;*/
+	width: 25%;
+	background-color: lightsalmon;
+	position: sticky;
+}
+
+.right {
+/*	flex-grow: 5;*/
+	width: 75%;
+	background-color: bisque;
+}
+
+.tab {
+	margin-left: 2em;
+}
+
+.tt {
+	font-family: monospace;
+}
