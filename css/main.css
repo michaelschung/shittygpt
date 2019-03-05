@@ -1,14 +1,11 @@
 body {
 	font-family: monospace;
-	font-size: 100px;
 }
 
 p {
 	font-family: cursive;
-	font-size: 100px;
 }
 
 #hi {
 	font-family: fantasy;
-	font-size: 500px;
 }
