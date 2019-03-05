@@ -1,2 +1,2 @@
 # CL Computer Science website files
-[Click here](https://michaelschung.github.io/) to go to the website.
+<a href="https://michaelschung.github.io/" target="_blank">[Click here]</a> to go to the website.
