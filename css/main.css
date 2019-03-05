@@ -1,4 +1,10 @@
-#title {
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.title {
 	font-family: monospace;
 	font-size: 30px;
 }
