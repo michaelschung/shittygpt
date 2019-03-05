@@ -5,12 +5,19 @@
 }
 
 .section {
-	
+	border: 2px solid black;
 }
 
 .title {
-	border: 1px black;
+	flex-grow: 1;
 	font-family: monospace;
 	font-size: 30px;
 	background-color: cornflowerblue;
+}
+
+.content {
+	flex-grow: 5;
+	font-family: sans-serif;
+	font-size: 15px;
+	background-color: bisque;
 }
