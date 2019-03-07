@@ -2,8 +2,8 @@ $().ready(function() {
 	console.log("1");
 	$.getJSON("../res/assignments.json", function(data) {
 		console.log("HELLO");
-		let assigns = data["assigns"];
-		for (let i = 0; i < assigns.length; i++) {
+		var assigns = data["assigns"];
+		for (var i = 0; i < assigns.length; i++) {
 			console.log(assigns[i].id);
 		}
 	});
