@@ -1,5 +1,5 @@
 $().ready(function() {
-	console.log("1");
+	console.log("2");
 	$.getJSON("../res/assignments.json", function(data) {
 		console.log("HELLO");
 		var assigns = data["assigns"];
