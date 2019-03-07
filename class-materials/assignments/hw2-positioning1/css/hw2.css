@@ -11,7 +11,7 @@
 .odd {
 	position: relative;
 	left: 100px;
-	color: red;
+	color: hotpink;
 	background-color: green;
 }
 
@@ -26,5 +26,6 @@
 	bottom: 0px;
 	
 	font-family: fantasy;
+	font-size: 80px;
 	color: grey;
 }
