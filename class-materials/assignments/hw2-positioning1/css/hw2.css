@@ -5,12 +5,22 @@
 	font-family: monospace;
 	font-size: 50px;
 	
+	/* Horizontal centering */
 	text-align: center;
 }
 
 .odd {
+/*
+	Odd blocks are offset 100px
+	from where they would be by
+	default. Thus, we must use
+	"relative" positioning, and
+	set how far it should be
+	from the "left" side.
+*/
 	position: relative;
 	left: 100px;
+	
 	color: hotpink;
 	background-color: green;
 }
@@ -21,6 +31,14 @@
 }
 
 #fixed {
+/*
+	The final block sticks to
+	the bottom right corner, so
+	we must use "fixed" positioning,
+	and set how far it should be
+	from the "right" and "bottom"
+	of the window.
+*/
 	position: fixed;
 	right: 0px;
 	bottom: 0px;
