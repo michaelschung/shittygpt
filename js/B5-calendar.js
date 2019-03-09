@@ -121,6 +121,7 @@ function setUpCalendar() {
 	}
 }
 
+/* Generate the days of the week up at the top */
 function daysOfTheWeek() {
 	for (var i in daysOfWeek) {
 		var d = daysOfWeek[i];
@@ -132,6 +133,7 @@ function daysOfTheWeek() {
 	}
 }
 
+/* Keeps everything at the correct relative sizes */
 function adjustGridItemSize() {
 	var item = $(".grid-item");
 	var itemW = item.width();
@@ -174,4 +176,5 @@ function adjustGridItemSize() {
 	});
 }
 
+/* Resize everything whenever the screen resizes */
 $(window).resize(adjustGridItemSize).resize();
