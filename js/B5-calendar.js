@@ -19,3 +19,12 @@ for (var i = 0; i < daysInTerm; i++) {
 		date.getDate()
 	));
 }
+
+function adjustGridItemSize() {
+	var itemW = $(".grid-item").width();
+	$(".grid-item").css({
+		"height": 1.5*itemW + "px"
+	});
+}
+
+$(window).resize(adjustGridItemSize).resize();

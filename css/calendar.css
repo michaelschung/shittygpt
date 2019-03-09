@@ -2,12 +2,6 @@ img {
 	width: 70%;
 }
 
-@media only screen and (max-width: 768px) {
-	img {
-		width: 100%;
-	}
-}
-
 .centered-box {
 	display: flex;
 	flex-direction: column;
@@ -15,16 +9,25 @@ img {
 }
 
 .grid-container {
-	width: 80%;
+	width: 90%;
 	display: grid;
 	grid-template-columns: auto auto auto auto auto auto auto;
-	grid-gap: 0px;
 }
 
 .grid-item {
-	min-width: 100px;
+	min-width: inherit/7;
 	background-color: rgba(255, 255, 255, 0.8);
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	font-size: 30px;
 	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	img {
+		width: 100%;
+	}
+	
+	.grid-container {
+		width: 100%;
+	}
 }
