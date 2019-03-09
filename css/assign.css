@@ -18,10 +18,6 @@ li {
 	align-items: stretch;
 }
 
-.padded {
-	padding: 0em 1em .5em;
-}
-
 .title {
 	flex-grow: 1;
 	border: 2px solid black;

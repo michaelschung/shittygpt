@@ -7,3 +7,7 @@
 	font-weight: bold;
 	font-size: 1.2em;
 }
+
+.padded {
+	padding: 0em 1em .5em;
+}
