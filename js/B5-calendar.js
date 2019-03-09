@@ -1,5 +1,6 @@
-console.log(Date());
+var grid = document.querySelector(".grid-container");
 
+daysOfTheWeek();
 setUpCalendar();
 loadEvents();
 
@@ -108,7 +109,6 @@ function setUpCalendar() {
 		var color = colors[day.getMonth()];
 		
 		/* Add this day to the calendar */
-		var grid = document.querySelector(".grid-container");
 		grid.appendChild(Util.tag(
 			"div",
 			{
@@ -117,6 +117,18 @@ function setUpCalendar() {
 				"style": "background-color: " + color + ";"
 			},
 			dayTemplate
+		));
+	}
+}
+
+function daysOfTheWeek() {
+	for (var i in daysOfWeek) {
+		var d = daysOfWeek[i];
+		console.log(d);
+		grid.appendChild(Util.tag(
+			"div",
+			{"class": "grid-item dayOfWeek"},
+			d//.substring(0, 3).toUpperCase()
 		));
 	}
 }
@@ -130,6 +142,7 @@ function adjustGridItemSize() {
 	});
 	
 	var itemH = item.height();
+	
 	$(".date").css({
 		"width": itemW/4 + "px",
 		"height": itemH/6.6 + "px",
@@ -152,6 +165,12 @@ function adjustGridItemSize() {
 	});
 	
 	$(".opaque").css({
+		"z-index": "98"
+	});
+	
+	$(".dayOfWeek").css({
+		"height": 0.3*itemH + "px",
+		"font-size": itemH/8 + "px",
 		"z-index": "99"
 	});
 }

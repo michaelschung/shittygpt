@@ -11,16 +11,27 @@ img {
 .grid-container {
 	width: 90%;
 	display: grid;
-	grid-template-columns: auto auto auto auto auto auto auto;
+	grid-template-columns: repeat(7, 1fr);
 }
 
 .grid-item {
 	position: relative;
-	min-width: inherit/7;
-/*	background-color: white;*/
 	border: 1px solid black;
 	font-size: 30px;
 	text-align: center;
+}
+
+.dayOfWeek {
+	position: sticky;
+	top: 0;
+	
+	background-color: #777;
+	color: whitesmoke;
+	
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
 }
 
 .date {

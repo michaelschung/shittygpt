@@ -10,6 +10,16 @@ const colors = {
 	5: "#FDDEFF",
 }
 
+const daysOfWeek = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
+]
+
 /* First and last days of class */
 const termStart = new Date("03/02/2019");
 const termEnd = new Date("06/05/2019");
