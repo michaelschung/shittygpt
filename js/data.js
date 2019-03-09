@@ -139,88 +139,105 @@ const b5Cal = {
 		{
 			"date": "",
 			"name": "",
-			"due": ""
+			"due": "",
+			"type": 0
 		},
 		*/
 		{
 			"date": "03/26/2019",
 			"name": "HW1: About You",
-			"due": "10:45 AM"
+			"due": "10:45 AM",
+			"type": 0
 		},
 		{
 			"date": "03/29/2019",
 			"name": "PROJ1: Proposal",
-			"due": "02:05 PM"
+			"due": "02:05 PM",
+			"type": 0
 		},
 		{
 			"date": "04/02/2019",
 			"name": "HW2: Positioning (Part 1)",
-			"due": "12:10 PM"
+			"due": "12:10 PM",
+			"type": 0
 		},
 		{
 			"date": "04/08/2019",
 			"name": "HW3: Positioning (Part 2)",
-			"due": "08:30 AM"
+			"due": "08:30 AM",
+			"type": 0
 		},
 		{
 			"date": "04/11/2019",
 			"name": "PROJ2: Basic Layout",
-			"due": "12:10 PM"
+			"due": "12:10 PM",
+			"type": 0
 		},
 		{
 			"date": "04/15/2019",
 			"name": "HW4: Comic Strip",
-			"due": "10:45 AM"
+			"due": "10:45 AM",
+			"type": 0
 		},
 		{
 			"date": "04/18/2019",
 			"name": "MINI1: HW5 Prep",
-			"due": "03:20 PM"
+			"due": "03:20 PM",
+			"type": 1
 		},
 		{
 			"date": "04/23/2019",
 			"name": "HW5: Grocery Store",
-			"due": "12:10 PM"
+			"due": "12:10 PM",
+			"type": 0
 		},
 		{
 			"date": "04/25/2019",
 			"name": "PROJ3: Responsive Interface",
-			"due": "10:45 AM"
+			"due": "10:45 AM",
+			"type": 0
 		},
 		{
 			"date": "04/29/2019",
 			"name": "MINI2: HW6 Prep",
-			"due": "09:45 AM"
+			"due": "09:45 AM",
+			"type": 1
 		},
 		{
 			"date": "04/30/2019",
 			"name": "HW6: Photo Generator",
-			"due": "02:05 PM"
+			"due": "02:05 PM",
+			"type": 0
 		},
 		{
 			"date": "05/06/2019",
 			"name": "HW7: Review Worksheet",
-			"due": "10:45 AM"
+			"due": "10:45 AM",
+			"type": 0
 		},
 		{
 			"date": "05/13/2019",
 			"name": "PROJ4: Goals",
-			"due": "01:55 PM"
+			"due": "01:55 PM",
+			"type": 1
 		},
 		{
 			"date": "05/17/2019",
 			"name": "PROJ5: Check-in",
-			"due": "08:30 AM"
+			"due": "08:30 AM",
+			"type": 0
 		},
 		{
 			"date": "05/23/2019",
 			"name": "PROJ6: Code",
-			"due": "11:59 PM"
+			"due": "11:59 PM",
+			"type": 2
 		},
 		{
 			"date": "05/24/2019",
 			"name": "PROJ7: Report",
-			"due": "11:59 PM"
+			"due": "11:59 PM",
+			"type": 2
 		}
 	],
 	"assessments": [

@@ -28,11 +28,20 @@ function loadEvents() {
 		var date = new Date(a.date).getTime();
 		var id = (date/100000).toString();
 		var name = a.name;
-		var due = a.due;
 		
-		$("#"+id).children(".due").append(Util.tag(
+		var dueNode = $("#"+id).children(".due");
+		
+		dueNode.append(Util.tag(
 			"div", {}, name
 		));
+		
+		var type = a.type == 1
+			? "(due at end of class)"
+			: "(due at " + a.due + ")";
+		
+		if (a.type) {
+			dueNode.append(Util.tag("div", {}, type));
+		}
 	}
 	
 	for (var i in assessments) {
