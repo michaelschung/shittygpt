@@ -55,6 +55,10 @@ img {
 	justify-content: center;
 }
 
+.assessment {
+	color: red;
+}
+
 @media only screen and (max-width: 768px) {
 	img {
 		width: 100%;

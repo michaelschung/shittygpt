@@ -5,7 +5,7 @@ const milsInDay = 1000*60*60*24;
 
 const daysInTerm = Math.round((termEnd-termStart)/milsInDay)+1;
 
-const cal = {
+const b5Cal = {
 	"events": [
 		/*
 		{

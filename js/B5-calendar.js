@@ -6,20 +6,44 @@ setUpCalendar();
 loadEvents();
 
 function loadEvents() {
-	var events = cal.events;
-	var assigns = cal.assigns;
-	var assessments = cal.assessments;
+	var events = b5Cal.events;
+	var assigns = b5Cal.assigns;
+	var assessments = b5Cal.assessments;
 	
 	for (var i in events) {
 		var e = events[i];
-//		console.log(e);
 		var date = new Date(e.date).getTime();
-		var content = e.content.split(" // ");
 		var id = (date/100000).toString();
+		var content = e.content.split(" // ");
 		
 		for (var i in content) {
-			$("#"+id).children (".content").append(Util.tag("div", {}, content[i]));
+			$("#"+id).children (".content").append(Util.tag(
+				"div", {}, content[i]
+			));
 		}
+	}
+	
+	for (var i in assigns) {
+		var a = assigns[i];
+		var date = new Date(a.date).getTime();
+		var id = (date/100000).toString();
+		var name = a.name;
+		var due = a.due;
+		
+		$("#"+id).children(".due").append(Util.tag(
+			"div", {}, name
+		));
+	}
+	
+	for (var i in assessments) {
+		var a = assessments[i];
+		var date = new Date(a.date).getTime();
+		var id = (date/100000).toString();
+		var name = a.name;
+		
+		$("#"+id).children(".content").append(Util.tag(
+			"div", {"class": "assessment"}, name
+		));
 	}
 }
 
@@ -32,7 +56,6 @@ function setUpCalendar() {
 			"div",
 			{"class": "date"},
 			day.getDate()
-	//		Util.tag("div", {}, day.getDate())
 		);
 
 		var content = Util.tag(
@@ -82,14 +105,14 @@ function adjustGridItemSize() {
 		"top": itemH/6 + "px",
 		"height": itemH/2.2 + "px",
 		"padding": itemW/15 + "px",
-		"font-size": itemH/12 + "px"
+		"font-size": itemH/15 + "px"
 	});
 	
 	$(".due").css({
 		"bottom": 0,
 		"height": itemH/4.5 + "px",
 		"padding": itemW/15 + "px",
-		"font-size": itemH/12 + "px",
+		"font-size": itemH/15 + "px",
 		"font-style": "italic"
 	});
 }
