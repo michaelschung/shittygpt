@@ -1,3 +1,8 @@
+/* If true, then the auto-calendar shows the entire term.
+   If false, it only shows from the current week on. */
+const showFullTerm = false;
+
+/* Background colors for the months March-June */
 const colors = {
 	2: "#FFDEDE",
 	3: "#DEFFE9",
@@ -5,13 +10,33 @@ const colors = {
 	5: "#FDDEFF",
 }
 
-const termStart = new Date("03/03/2019, 12:00 AM");
-const termEnd = new Date("06/08/2019, 12:00 AM");
+/* First and last days of class */
+const termStart = new Date("03/02/2019");
+const termEnd = new Date("06/05/2019");
 
 const milsInDay = 1000*60*60*24;
 
-const daysInTerm = Math.round((termEnd-termStart)/milsInDay)+1;
+/* Returns the most recent Sunday before the given date */
+function recentSunday(someDate) {
+	someDate.setDate(someDate.getDate() - someDate.getDay());
+	someDate.setHours(0, 0, 0, 0);
+	return someDate;
+}
 
+/* Returns the next Saturday after the given date */
+function nextSaturday(someDate) {
+	someDate.setDate(someDate.getDate() + 6 - someDate.getDay());
+	return someDate;
+}
+
+/* We may want to start/end the calendar on days other
+   than the actual start/end of the term */
+const dispStart = recentSunday(showFullTerm ? termStart : new Date());
+const dispEnd = nextSaturday(termEnd);
+
+const daysInTerm = Math.round((dispEnd-dispStart) / milsInDay)+1;
+
+/* Data for B5 */
 const b5Cal = {
 	"events": [
 		/*
@@ -147,7 +172,7 @@ const b5Cal = {
 			"date": "",
 			"name": "",
 			"due": "",
-			"type": 0
+			"type": 0	// 0 = normal, 1 = end of class, 2 = use the due time
 		},
 		*/
 		{

@@ -1,15 +1,15 @@
 console.log(Date());
 
-var grid = document.querySelector(".grid-container");
-
 setUpCalendar();
 loadEvents();
 
+/* Load events, etc. from the giant data structure */
 function loadEvents() {
 	var events = b5Cal.events;
 	var assigns = b5Cal.assigns;
 	var assessments = b5Cal.assessments;
 	
+	/* Add the events */
 	for (var i in events) {
 		var e = events[i];
 		var date = new Date(e.date).getTime();
@@ -23,6 +23,7 @@ function loadEvents() {
 		}
 	}
 	
+	/* Add the assignments */
 	for (var i in assigns) {
 		var a = assigns[i];
 		var date = new Date(a.date).getTime();
@@ -35,6 +36,7 @@ function loadEvents() {
 			"div", {}, name
 		));
 		
+		/* Special cases with assignment types */
 		var type = a.type == 1
 			? "(due at end of class)"
 			: "(due at " + a.due + ")";
@@ -44,6 +46,7 @@ function loadEvents() {
 		}
 	}
 	
+	/* Add the assessments */
 	for (var i in assessments) {
 		var a = assessments[i];
 		var date = new Date(a.date).getTime();
@@ -56,10 +59,14 @@ function loadEvents() {
 	}
 }
 
+/*
+ * Generate the calendar template
+ */
 function setUpCalendar() {
 	for (var i = 0; i < daysInTerm; i++) {
-		var day = Util.nDaysLater(termStart, i);
-		var id = (day.getTime()).toString();
+		var day = Util.nDaysLater(dispStart, i);
+		/* Use the time string as the ID */
+		var id = day.getTime().toString();
 
 		var date = Util.tag(
 			"div",
@@ -79,14 +86,27 @@ function setUpCalendar() {
 			""
 		);
 
+		/* The date box and space for content are there
+		 * no matter what, but we only add the "due"
+		 * section if it's a weekday.
+		 */
 		var dayTemplate = [date, content];
 		if (day.getDay() > 0 && day.getDay() < 6) {
 			dayTemplate.push(due);
 		}
 		
-		
+		/* Fuzz out past dates */
+		if (day < new Date() && !Util.isToday(day)) {
+			dayTemplate.push(Util.tag(
+				"div", {"class": "opaque"}, ""
+			));
+		}
 
+		/* Get the background color for this day */
 		var color = colors[day.getMonth()];
+		
+		/* Add this day to the calendar */
+		var grid = document.querySelector(".grid-container");
 		grid.appendChild(Util.tag(
 			"div",
 			{
@@ -127,6 +147,10 @@ function adjustGridItemSize() {
 		"padding": itemW/15 + "px",
 		"font-size": itemH/15 + "px",
 		"font-style": "italic"
+	});
+	
+	$(".opaque").css({
+		"z-index": "99"
 	});
 }
 

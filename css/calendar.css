@@ -55,6 +55,13 @@ img {
 	justify-content: center;
 }
 
+.opaque {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .7);
+}
+
 .assessment {
 	color: red;
 }
