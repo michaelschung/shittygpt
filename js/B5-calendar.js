@@ -110,7 +110,7 @@ function adjustGridItemSize() {
 	
 	$(".due").css({
 		"bottom": 0,
-		"height": itemH/4.5 + "px",
+		"height": itemH/6 + "px",
 		"padding": itemW/15 + "px",
 		"font-size": itemH/15 + "px",
 		"font-style": "italic"
