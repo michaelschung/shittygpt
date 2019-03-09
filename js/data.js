@@ -1,6 +1,10 @@
 const termStart = new Date("03/17/2019");
 const termEnd = new Date("06/05/2019");
 
+const milsInDay = 1000*60*60*24;
+
+const daysInTerm = Math.round((termEnd-termStart)/milsInDay)+1;
+
 const cal = {
 	"events": [
 		/*

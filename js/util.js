@@ -254,6 +254,15 @@
 		let month = date.getMonth() + 1;
 		return date.getFullYear() + '-' + month + '-' + date.getDate();
 	};
+	
+	/*
+	 * Returns a Date object that is n days later
+	 * than the inputted timestamp.
+	 */
+	Util.nDaysLater = (timestamp, n) => {
+		let date = new Date(timestamp);
+		return new Date(date.getTime() + n*1000*60*60*24);
+	};
 
 	/*
 	 * Returns a local date string
