@@ -124,11 +124,10 @@ function setUpCalendar() {
 function daysOfTheWeek() {
 	for (var i in daysOfWeek) {
 		var d = daysOfWeek[i];
-		console.log(d);
 		grid.appendChild(Util.tag(
 			"div",
 			{"class": "grid-item dayOfWeek"},
-			d//.substring(0, 3).toUpperCase()
+			d
 		));
 	}
 }
