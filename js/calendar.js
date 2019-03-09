@@ -1,6 +1,4 @@
 var block = localStorage.getItem("block");
-console.log(block);
-
 const cal = block == 1 ? b1Cal : b5Cal;
 
 var grid = document.querySelector(".grid-container");
