@@ -9,6 +9,7 @@ var assessments = cal.assessments;
 for (var i = 0; i < daysInTerm; i++) {
 	var date = Util.nDaysLater(termStart, i);
 	var id = (date.getTime()/100000).toString();
+	
 	grid.appendChild(Util.tag(
 		"div",
 		{
