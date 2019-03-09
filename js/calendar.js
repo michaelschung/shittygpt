@@ -1,3 +1,8 @@
+var block = localStorage.getItem("block");
+console.log(block);
+
+const cal = block == 1 ? b1Cal : b5Cal;
+
 var grid = document.querySelector(".grid-container");
 
 daysOfTheWeek();
@@ -6,9 +11,9 @@ loadEvents();
 
 /* Load events, etc. from the giant data structure */
 function loadEvents() {
-	var events = b5Cal.events;
-	var assigns = b5Cal.assigns;
-	var assessments = b5Cal.assessments;
+	var events = cal.events;
+	var assigns = cal.assigns;
+	var assessments = cal.assessments;
 	
 	/* Add the events */
 	for (var i in events) {
