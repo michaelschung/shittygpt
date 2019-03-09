@@ -1,3 +1,10 @@
+const colors = {
+	2: "#FFDEDE",
+	3: "#DEFFE9",
+	4: "#DEE7FF",
+	5: "#FDDEFF",
+}
+
 const termStart = new Date("03/03/2019, 12:00 AM");
 const termEnd = new Date("06/08/2019, 12:00 AM");
 

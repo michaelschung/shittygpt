@@ -83,12 +83,16 @@ function setUpCalendar() {
 		if (day.getDay() > 0 && day.getDay() < 6) {
 			dayTemplate.push(due);
 		}
+		
+		
 
+		var color = colors[day.getMonth()];
 		grid.appendChild(Util.tag(
 			"div",
 			{
 				"class": "grid-item",
-				"id": id
+				"id": id,
+				"style": "background-color: " + color + ";"
 			},
 			dayTemplate
 		));
@@ -100,8 +104,7 @@ function adjustGridItemSize() {
 	var itemW = item.width();
 	
 	$(".grid-item").css({
-		"height": 1.3*itemW + "px",
-		"background-color": "white"
+		"height": 1.3*itemW + "px"
 	});
 	
 	var itemH = item.height();
