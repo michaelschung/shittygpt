@@ -40,6 +40,8 @@ img {
 	width: 86%;
 /*	background-color: aqua;*/
 	text-align: left;
+	font-weight: bold;
+	color: #444;
 }
 
 .due {

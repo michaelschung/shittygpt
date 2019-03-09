@@ -18,7 +18,9 @@ function loadEvents() {
 		
 		for (var i in content) {
 			$("#"+id).children (".content").append(Util.tag(
-				"div", {}, content[i]
+				"div", {
+					"style": "text-indent: -1em; margin-left: 1em;"
+				}, content[i]
 			));
 		}
 	}
