@@ -1,5 +1,5 @@
-const termStart = new Date("03/17/2019");
-const termEnd = new Date("06/05/2019");
+const termStart = new Date("03/03/2019, 12:00 AM");
+const termEnd = new Date("06/08/2019, 12:00 AM");
 
 const milsInDay = 1000*60*60*24;
 

@@ -13,7 +13,7 @@ function loadEvents() {
 	for (var i in events) {
 		var e = events[i];
 		var date = new Date(e.date).getTime();
-		var id = (date/100000).toString();
+		var id = date.toString();
 		var content = e.content.split(" // ");
 		
 		for (var i in content) {
@@ -26,7 +26,7 @@ function loadEvents() {
 	for (var i in assigns) {
 		var a = assigns[i];
 		var date = new Date(a.date).getTime();
-		var id = (date/100000).toString();
+		var id = date.toString();
 		var name = a.name;
 		
 		var dueNode = $("#"+id).children(".due");
@@ -47,7 +47,7 @@ function loadEvents() {
 	for (var i in assessments) {
 		var a = assessments[i];
 		var date = new Date(a.date).getTime();
-		var id = (date/100000).toString();
+		var id = date.toString();
 		var name = a.name;
 		
 		$("#"+id).children(".content").append(Util.tag(
@@ -59,7 +59,7 @@ function loadEvents() {
 function setUpCalendar() {
 	for (var i = 0; i < daysInTerm; i++) {
 		var day = Util.nDaysLater(termStart, i);
-		var id = (day.getTime()/100000).toString();
+		var id = (day.getTime()).toString();
 
 		var date = Util.tag(
 			"div",
@@ -100,7 +100,8 @@ function adjustGridItemSize() {
 	var itemW = item.width();
 	
 	$(".grid-item").css({
-		"height": 1.3*itemW + "px"
+		"height": 1.3*itemW + "px",
+		"background-color": "white"
 	});
 	
 	var itemH = item.height();

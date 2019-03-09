@@ -261,7 +261,8 @@
 	 */
 	Util.nDaysLater = (timestamp, n) => {
 		let date = new Date(timestamp);
-		return new Date(date.getTime() + n*1000*60*60*24);
+		date.setDate(date.getDate() + n);
+		return date;
 	};
 
 	/*

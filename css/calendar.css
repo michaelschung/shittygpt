@@ -17,7 +17,7 @@ img {
 .grid-item {
 	position: relative;
 	min-width: inherit/7;
-	background-color: white;
+/*	background-color: white;*/
 	border: 1px solid black;
 	font-size: 30px;
 	text-align: center;
