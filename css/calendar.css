@@ -9,7 +9,7 @@ img {
 }
 
 .grid-container {
-	width: 100%;
+	width: 90%;
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 }
@@ -85,7 +85,14 @@ img {
 		width: 100%;
 	}
 	
+/*
 	.grid-container {
 		width: 100%;
+	}
+*/
+	.grid-container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
 	}
 }
