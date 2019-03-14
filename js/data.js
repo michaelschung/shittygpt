@@ -263,7 +263,7 @@ const b1Cal = {
 		},
 		{
 			"date": "05/23/2019",
-			"name": "PROJ6: Report",
+			"name": "PROJ7: Report",
 			"due": "11:59 PM",
 			"type": 2
 		}
