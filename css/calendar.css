@@ -69,6 +69,15 @@ img {
 	justify-content: center;
 }
 
+.today {
+	position: relative;
+	left: -5px;
+	top: -5px;
+	width: 100%;
+	height: 100%;
+	border: 5px solid red;
+}
+
 .opaque {
 	position: relative;
 	width: 100%;

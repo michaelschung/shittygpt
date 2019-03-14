@@ -102,7 +102,11 @@ function setUpCalendar() {
 		}
 		
 		/* Fuzz out past dates */
-		if (day < new Date() && !Util.isToday(day)) {
+		if (Util.isToday(day)) {
+			dayTemplate.push(Util.tag(
+				"div", {"class": "today"}, ""
+			));
+		} else if (day < new Date()) {
 			dayTemplate.push(Util.tag(
 				"div", {"class": "opaque"}, ""
 			));
@@ -169,6 +173,10 @@ function adjustGridItemSize() {
 	});
 	
 	$(".opaque").css({
+		"z-index": "97"
+	});
+	
+	$(".today").css({
 		"z-index": "98"
 	});
 	
