@@ -177,6 +177,11 @@ function adjustGridItemSize() {
 	});
 	
 	$(".today").css({
+		"left": -itemW/60 + "px",
+		"top": -itemW/60 + "px",
+		"width": "calc(100% - " + itemW/30 + "px)",
+		"height": "calc(100% - " + itemW/30 + "px)",
+		"border": itemW/30 + "px solid red",
 		"z-index": "98"
 	});
 	
