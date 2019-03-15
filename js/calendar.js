@@ -18,13 +18,13 @@ function loadEvents() {
 		var e = events[i];
 		var date = new Date(e.date).getTime();
 		var id = date.toString();
-		var content = e.content.split(" // ");
+		var agenda = e.agenda.split(" // ");
 		
-		for (var i in content) {
-			$("#"+id).children (".content").append(Util.tag(
+		for (var i in agenda) {
+			$("#"+id).children (".agenda").append(Util.tag(
 				"div", {
 					"style": "text-indent: -1em; margin-left: 1em;"
-				}, content[i]
+				}, agenda[i]
 			));
 		}
 	}
@@ -59,7 +59,7 @@ function loadEvents() {
 		var id = date.toString();
 		var name = a.name;
 		
-		$("#"+id).children(".content").append(Util.tag(
+		$("#"+id).children(".agenda").append(Util.tag(
 			"div", {"class": "assessment"}, name
 		));
 	}
@@ -80,9 +80,9 @@ function setUpCalendar() {
 			day.getDate()
 		);
 
-		var content = Util.tag(
+		var agenda = Util.tag(
 			"div",
-			{"class": "content"},
+			{"class": "agenda"},
 			""
 		);
 
@@ -92,11 +92,11 @@ function setUpCalendar() {
 			""
 		);
 
-		/* The date box and space for content are there
+		/* The date box and space for agenda are there
 		 * no matter what, but we only add the "due"
 		 * section if it's a weekday.
 		 */
-		var dayTemplate = [date, content];
+		var dayTemplate = [date, agenda];
 		if (day.getDay() > 0 && day.getDay() < 6) {
 			dayTemplate.push(due);
 		}
@@ -157,7 +157,7 @@ function adjustGridItemSize() {
 		"font-size": itemH/8 + "px"
 	});
 	
-	$(".content").css({
+	$(".agenda").css({
 		"top": itemH/6 + "px",
 		"height": itemH/2.2 + "px",
 		"padding": itemW/15 + "px",

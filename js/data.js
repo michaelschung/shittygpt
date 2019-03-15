@@ -51,123 +51,123 @@ const b1Cal = {
 	"events": [
 		{
 			"date": "03/19/2019",
-			"content": "Welcome back // Logistics // HTML: body, tags"
+			"agenda": "Welcome back // Logistics // HTML: body, tags"
 		},
 		{
 			"date": "03/21/2019",
-			"content": "HTML: img, lists, div"
+			"agenda": "HTML: img, lists, div"
 		},
 		{
 			"date": "03/25/2019",
-			"content": "HTML: class, id // CSS: size, color, font"
+			"agenda": "HTML: class, id // CSS: size, color, font"
 		},
 		{
 			"date": "03/27/2019",
-			"content": "CSS: positioning"
+			"agenda": "CSS: positioning"
 		},
 		{
 			"date": "03/28/2019",
-			"content": "CSS: hover, click"
+			"agenda": "CSS: hover, click"
 		},
 		{
 			"date": "04/01/2019",
-			"content": "CSS: flex positioning"
+			"agenda": "CSS: flex positioning"
 		},
 		{
 			"date": "04/03/2019",
-			"content": "CSS: padding, border, margin"
+			"agenda": "CSS: padding, border, margin"
 		},
 		{
 			"date": "04/05/2019",
-			"content": "HTML/CSS: review, practice // JS: sneak preview"
+			"agenda": "HTML/CSS: review, practice // JS: sneak preview"
 		},
 		{
 			"date": "04/08/2019",
-			"content": "JS: DOM"
+			"agenda": "JS: DOM"
 		},
 		{
 			"date": "04/10/2019",
-			"content": "HTML/JS: labels, button, input, checkboxes, forms"
+			"agenda": "HTML/JS: labels, button, input, checkboxes, forms"
 		},
 		{
 			"date": "04/12/2019",
-			"content": "HTML/JS: review, practice problems"
+			"agenda": "HTML/JS: review, practice problems"
 		},
 		{
 			"date": "04/16/2019",
-			"content": "Responsive web pages"
+			"agenda": "Responsive web pages"
 		},
 		{
 			"date": "04/17/2019",
-			"content": "Responsive web pages (continued)"
+			"agenda": "Responsive web pages (continued)"
 		},
 		{
 			"date": "04/19/2019",
-			"content": "MINI1 work session"
+			"agenda": "MINI1 work session"
 		},
 		{
 			"date": "04/24/2019",
-			"content": "JS: creating HTML elements"
+			"agenda": "JS: creating HTML elements"
 		},
 		{
 			"date": "04/26/2019",
-			"content": "JS: creating HTML elements (continued)"
+			"agenda": "JS: creating HTML elements (continued)"
 		},
 		{
 			"date": "04/29/2019",
-			"content": "MINI2 work session"
+			"agenda": "MINI2 work session"
 		},
 		{
 			"date": "05/01/2019",
-			"content": "Bringing it all together"
+			"agenda": "Bringing it all together"
 		},
 		{
 			"date": "05/03/2019",
-			"content": "Review work session"
+			"agenda": "Review work session"
 		},
 		{
 			"date": "05/07/2019",
-			"content": "HTML/CSS/JS: Review"
+			"agenda": "HTML/CSS/JS: Review"
 		},
 		{
 			"date": "05/08/2019",
-			"content": "HTML/CSS/JS: practice problems"
+			"agenda": "HTML/CSS/JS: practice problems"
 		},
 		{
 			"date": "05/14/2019",
-			"content": "Project work session"
+			"agenda": "Project work session"
 		},
 		{
 			"date": "05/16/2019",
-			"content": "Project work session"
+			"agenda": "Project work session"
 		},
 		{
 			"date": "05/17/2019",
-			"content": "Document-switching"
+			"agenda": "Document-switching"
 		},
 		{
 			"date": "05/21/2019",
-			"content": "Project work session"
+			"agenda": "Project work session"
 		},
 		{
 			"date": "05/23/2019",
-			"content": "Project presentations!"
+			"agenda": "Project presentations!"
 		},
 		{
 			"date": "05/28/2019",
-			"content": "Class"
+			"agenda": "Class"
 		},
 		{
 			"date": "05/29/2019",
-			"content": "Class"
+			"agenda": "Class"
 		},
 		{
 			"date": "05/31/2019",
-			"content": "Review session"
+			"agenda": "Review session"
 		},
 		{
 			"date": "06/05/2019",
-			"content": "Exam day"
+			"agenda": "Exam day"
 		}
 	],
 	"assigns": [
@@ -286,128 +286,128 @@ const b5Cal = {
 		/*
 		{
 			"date": "",
-			"content": ""
+			"agenda": ""
 		},
 		*/
 		{
 			"date": "03/19/2019",
-			"content": "Welcome back // Logistics // HTML: body, tags"
+			"agenda": "Welcome back // Logistics // HTML: body, tags"
 		},
 		{
 			"date": "03/20/2019",
-			"content": "HTML: img, lists, div"
+			"agenda": "HTML: img, lists, div"
 		},
 		{
 			"date": "03/22/2019",
-			"content": "HTML: class, id // CSS: size, color, font"
+			"agenda": "HTML: class, id // CSS: size, color, font"
 		},
 		{
 			"date": "03/26/2019",
-			"content": "CSS: positioning"
+			"agenda": "CSS: positioning"
 		},
 		{
 			"date": "03/28/2019",
-			"content": "CSS: hover, click"
+			"agenda": "CSS: hover, click"
 		},
 		{
 			"date": "03/29/2019",
-			"content": "CSS: flex positioning"
+			"agenda": "CSS: flex positioning"
 		},
 		{
 			"date": "04/02/2019",
-			"content": "CSS: padding, border, margin"
+			"agenda": "CSS: padding, border, margin"
 		},
 		{
 			"date": "04/04/2019",
-			"content": "HTML/CSS: review, practice // JS: sneak preview"
+			"agenda": "HTML/CSS: review, practice // JS: sneak preview"
 		},
 		{
 			"date": "04/08/2019",
-			"content": "JS: DOM"
+			"agenda": "JS: DOM"
 		},
 		{
 			"date": "04/09/2019",
-			"content": "HTML/JS: labels, button, input, checkboxes, forms"
+			"agenda": "HTML/JS: labels, button, input, checkboxes, forms"
 		},
 		{
 			"date": "04/11/2019",
-			"content": "HTML/JS: review, practice problems"
+			"agenda": "HTML/JS: review, practice problems"
 		},
 		{
 			"date": "04/15/2019",
-			"content": "Responsive web pages"
+			"agenda": "Responsive web pages"
 		},
 		{
 			"date": "04/17/2019",
-			"content": "Responsive web pages (continued)"
+			"agenda": "Responsive web pages (continued)"
 		},
 		{
 			"date": "04/18/2019",
-			"content": "MINI1 work session"
+			"agenda": "MINI1 work session"
 		},
 		{
 			"date": "04/23/2019",
-			"content": "JS: creating HTML elements"
+			"agenda": "JS: creating HTML elements"
 		},
 		{
 			"date": "04/25/2019",
-			"content": "JS: creating HTML elements (continued)"
+			"agenda": "JS: creating HTML elements (continued)"
 		},
 		{
 			"date": "04/29/2019",
-			"content": "MINI2 work session"
+			"agenda": "MINI2 work session"
 		},
 		{
 			"date": "04/30/2019",
-			"content": "Bringing it all together"
+			"agenda": "Bringing it all together"
 		},
 		{
 			"date": "05/02/2019",
-			"content": "Review work session"
+			"agenda": "Review work session"
 		},
 		{
 			"date": "05/06/2019",
-			"content": "HTML/CSS/JS: Review"
+			"agenda": "HTML/CSS/JS: Review"
 		},
 		{
 			"date": "05/08/2019",
-			"content": "HTML/CSS/JS: practice problems"
+			"agenda": "HTML/CSS/JS: practice problems"
 		},
 		{
 			"date": "05/13/2019",
-			"content": "Project work session"
+			"agenda": "Project work session"
 		},
 		{
 			"date": "05/15/2019",
-			"content": "Project work session"
+			"agenda": "Project work session"
 		},
 		{
 			"date": "05/17/2019",
-			"content": "Document-switching"
+			"agenda": "Document-switching"
 		},
 		{
 			"date": "05/20/2019",
-			"content": "Project work session"
+			"agenda": "Project work session"
 		},
 		{
 			"date": "05/22/2019",
-			"content": "Project work session"
+			"agenda": "Project work session"
 		},
 		{
 			"date": "05/24/2019",
-			"content": "Project presentations!"
+			"agenda": "Project presentations!"
 		},
 		{
 			"date": "05/29/2019",
-			"content": "Class"
+			"agenda": "Class"
 		},
 		{
 			"date": "05/30/2019",
-			"content": "Review session"
+			"agenda": "Review session"
 		},
 		{
 			"date": "06/04/2019",
-			"content": "Exam day"
+			"agenda": "Exam day"
 		}
 	],
 	"assigns": [
