@@ -263,7 +263,7 @@ const b1Cal = {
 		},
 		{
 			"date": "05/23/2019",
-			"name": "PROJ7: Report",
+			"name": "PROJ7: Reflection",
 			"due": "11:59 PM",
 			"type": 2
 		}
@@ -511,7 +511,7 @@ const b5Cal = {
 		},
 		{
 			"date": "05/24/2019",
-			"name": "PROJ7: Report",
+			"name": "PROJ7: Reflection",
 			"due": "11:59 PM",
 			"type": 2
 		}
