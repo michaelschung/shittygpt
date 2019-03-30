@@ -11,3 +11,22 @@
 .padded {
 	padding: 0em 1em .5em;
 }
+
+.title-container {
+	flex-grow: 1;
+	border: 2px solid black;
+	text-align: center;
+	font-family: monospace;
+	background-color: cornflowerblue;
+}
+
+.title {
+	font-size: 3em;
+}
+
+.home-button {
+	width: 3em;
+	position: absolute;
+	left: 1.5em;
+	top: 1.2em;
+}

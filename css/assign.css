@@ -18,15 +18,6 @@ li {
 	align-items: stretch;
 }
 
-.title {
-	flex-grow: 1;
-	border: 2px solid black;
-	text-align: center;
-	font-family: monospace;
-	font-size: 3em;
-	background-color: cornflowerblue;
-}
-
 .page {
 	flex-grow: 5;
 	border: 2px solid black;

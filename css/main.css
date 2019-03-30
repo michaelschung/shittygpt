@@ -4,18 +4,6 @@
 	align-items: stretch;
 }
 
-.title-container {
-	flex-grow: 1;
-	border: 2px solid black;
-	text-align: center;
-	font-family: monospace;
-	background-color: cornflowerblue;
-}
-
-.title {
-	font-size: 3em;
-}
-
 .subtitle {
 	font-size: 1.5em;
 }
