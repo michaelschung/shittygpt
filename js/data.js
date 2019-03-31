@@ -175,96 +175,112 @@ const b1Cal = {
 			"date": "03/25/2019",
 			"name": "HW1: About You",
 			"due": "10:45 AM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw1-about-you/hw1-spec.html",
 			"type": 0
 		},
 		{
 			"date": "03/28/2019",
 			"name": "PROJ1: Proposal",
 			"due": "02:05 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B1.pdf",
 			"type": 0
 		},
 		{
 			"date": "04/01/2019",
 			"name": "HW2: Positioning (Part 1)",
 			"due": "12:10 PM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw2-positioning1/hw2-spec.html",
 			"type": 0
 		},
 		{
 			"date": "04/08/2019",
 			"name": "HW3: Positioning (Part 2)",
 			"due": "02:05 PM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw3-positioning2/hw3-spec.html",
 			"type": 0
 		},
 		{
 			"date": "04/12/2019",
 			"name": "PROJ2: Basic Layout",
 			"due": "10:45 AM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B1.pdf",
 			"type": 0
 		},
 		{
 			"date": "04/16/2019",
 			"name": "HW4: Comic Strip",
 			"due": "08:30 AM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw4-comic-strip/hw4-spec.html",
 			"type": 0
 		},
 		{
 			"date": "04/19/2019",
 			"name": "MINI1: HW5 Prep",
 			"due": "01:55 PM",
+			"link": "",
 			"type": 1
 		},
 		{
 			"date": "04/24/2019",
 			"name": "HW5: Grocery Store",
 			"due": "09:30 AM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-grocery-store/hw5-spec.html",
 			"type": 0
 		},
 		{
 			"date": "04/26/2019",
 			"name": "PROJ3: Responsive Interface",
 			"due": "08:30 AM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B1.pdf",
 			"type": 0
 		},
 		{
 			"date": "04/29/2019",
 			"name": "MINI2: HW6 Prep",
 			"due": "03:20 PM",
+			"link": "",
 			"type": 1
 		},
 		{
 			"date": "05/01/2019",
 			"name": "HW6: Photo Generator",
 			"due": "10:30 AM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw6-photo-generator/hw6-spec.html",
 			"type": 0
 		},
 		{
 			"date": "05/07/2019",
 			"name": "HW7: Review Worksheet",
 			"due": "08:30 AM",
+			"link": "",
 			"type": 0
 		},
 		{
 			"date": "05/14/2019",
 			"name": "PROJ4: Goals",
 			"due": "12:00 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B1.pdf",
 			"type": 1
 		},
 		{
 			"date": "05/17/2019",
 			"name": "PROJ5: Check-in",
 			"due": "02:05 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B1.pdf",
 			"type": 0
 		},
 		{
 			"date": "05/22/2019",
 			"name": "PROJ6: Code",
 			"due": "11:59 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B1.pdf",
 			"type": 2
 		},
 		{
 			"date": "05/23/2019",
 			"name": "PROJ7: Reflection",
 			"due": "11:59 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B1.pdf",
 			"type": 2
 		}
 	],
@@ -416,6 +432,7 @@ const b5Cal = {
 			"date": "",
 			"name": "",
 			"due": "",
+			"link": "",
 			"type": 0	// 0 = normal, 1 = end of class, 2 = use the due time
 		},
 		*/
@@ -423,96 +440,112 @@ const b5Cal = {
 			"date": "03/26/2019",
 			"name": "HW1: About You",
 			"due": "10:45 AM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw1-about-you/hw1-spec.html",
 			"type": 0
 		},
 		{
 			"date": "03/29/2019",
 			"name": "PROJ1: Proposal",
 			"due": "02:05 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 0
 		},
 		{
 			"date": "04/02/2019",
 			"name": "HW2: Positioning (Part 1)",
 			"due": "12:10 PM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw2-positioning1/hw2-spec.html",
 			"type": 0
 		},
 		{
 			"date": "04/08/2019",
 			"name": "HW3: Positioning (Part 2)",
 			"due": "08:30 AM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw3-positioning2/hw3-spec.html",
 			"type": 0
 		},
 		{
 			"date": "04/11/2019",
 			"name": "PROJ2: Basic Layout",
 			"due": "12:10 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 0
 		},
 		{
 			"date": "04/15/2019",
 			"name": "HW4: Comic Strip",
 			"due": "10:45 AM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw4-comic-strip/hw4-spec.html",
 			"type": 0
 		},
 		{
 			"date": "04/18/2019",
 			"name": "MINI1: HW5 Prep",
 			"due": "03:20 PM",
+			"link": "",
 			"type": 1
 		},
 		{
 			"date": "04/23/2019",
 			"name": "HW5: Grocery Store",
 			"due": "12:10 PM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-grocery-store/hw5-spec.html",
 			"type": 0
 		},
 		{
 			"date": "04/25/2019",
 			"name": "PROJ3: Responsive Interface",
 			"due": "10:45 AM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 0
 		},
 		{
 			"date": "04/29/2019",
 			"name": "MINI2: HW6 Prep",
 			"due": "09:45 AM",
+			"link": "",
 			"type": 1
 		},
 		{
 			"date": "04/30/2019",
 			"name": "HW6: Photo Generator",
 			"due": "02:05 PM",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw6-photo-generator/hw6-spec.html",
 			"type": 0
 		},
 		{
 			"date": "05/06/2019",
 			"name": "HW7: Review Worksheet",
 			"due": "10:45 AM",
+			"link": "",
 			"type": 0
 		},
 		{
 			"date": "05/13/2019",
 			"name": "PROJ4: Goals",
 			"due": "01:55 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 1
 		},
 		{
 			"date": "05/17/2019",
 			"name": "PROJ5: Check-in",
 			"due": "08:30 AM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 0
 		},
 		{
 			"date": "05/23/2019",
 			"name": "PROJ6: Code",
 			"due": "11:59 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 2
 		},
 		{
 			"date": "05/24/2019",
 			"name": "PROJ7: Reflection",
 			"due": "11:59 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 2
 		}
 	],

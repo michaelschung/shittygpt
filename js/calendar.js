@@ -35,12 +35,19 @@ function loadEvents() {
 		var date = new Date(a.date).getTime();
 		var id = date.toString();
 		var name = a.name;
+		var link = a.link;
 		
 		var dueNode = $("#"+id).children(".due");
 		
-		dueNode.append(Util.tag(
-			"div", {}, name
-		));
+		var assignDue = Util.tag("div", {}, name);
+		if (link != "" && !name.startsWith("MINI")) {
+			assignDue = Util.tag("a", {
+				"href": link,
+				"target": "_blank"
+			}, assignDue);
+		}
+		
+		dueNode.append(assignDue);
 		
 		/* Special cases with assignment types */
 		var type = a.type == 1
