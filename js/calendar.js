@@ -197,6 +197,11 @@ function adjustGridItemSize() {
 		"font-size": itemH/8 + "px",
 		"z-index": "99"
 	});
+	
+	/* Make sure links are always clickable */
+	$($(".grid-item").children(".due").children()[0]).css({
+		"z-index": "100"
+	});
 }
 
 /* Resize everything whenever the screen resizes */
