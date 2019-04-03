@@ -200,7 +200,7 @@ function adjustGridItemSize() {
 	
 	/* Make sure links are always clickable */
 	$($(".grid-item").children(".due").children()[0]).css({
-		"z-index": "100"
+		"z-index": "98"
 	});
 }
 

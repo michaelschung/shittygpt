@@ -67,7 +67,7 @@ const b1Cal = {
 		},
 		{
 			"date": "03/28/2019",
-			"agenda": "CSS: hover, click"
+			"agenda": "CSS: hover, click, padding, border, margin"
 		},
 		{
 			"date": "04/01/2019",
@@ -75,11 +75,11 @@ const b1Cal = {
 		},
 		{
 			"date": "04/03/2019",
-			"agenda": "CSS: padding, border, margin"
+			"agenda": "HTML/CSS: review, practice"
 		},
 		{
 			"date": "04/05/2019",
-			"agenda": "HTML/CSS: review, practice // JS: sneak preview"
+			"agenda": "JS: sneak preview"
 		},
 		{
 			"date": "04/08/2019",
@@ -327,11 +327,11 @@ const b5Cal = {
 		},
 		{
 			"date": "03/29/2019",
-			"agenda": "CSS: flex positioning"
+			"agenda": "CSS: positioning practice"
 		},
 		{
 			"date": "04/02/2019",
-			"agenda": "CSS: padding, border, margin"
+			"agenda": "CSS: flex positioning"
 		},
 		{
 			"date": "04/04/2019",
@@ -551,7 +551,7 @@ const b5Cal = {
 	],
 	"assessments": [
 		{
-			"date": "04/04/2019",
+			"date": "04/08/2019",
 			"name": "QUIZ: HTML/CSS"
 		},
 		{
