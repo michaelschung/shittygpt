@@ -215,6 +215,13 @@ const b1Cal = {
 			"type": 0
 		},
 		{
+			"date": "04/17/2019",
+			"name": "Upload 2 PG images to Google Drive folder",
+			"due": "11:30 AM",
+			"link": "https://drive.google.com/drive/folders/1CXAoJsEqoCTOloGXiA-VEij7R_zJLi1Q?usp=sharing",
+			"type": 0
+		},
+		{
 			"date": "04/19/2019",
 			"name": "MINI1: HW5 Prep",
 			"due": "01:55 PM",
@@ -477,6 +484,13 @@ const b5Cal = {
 			"name": "HW4: Comic Strip",
 			"due": "10:45 AM",
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw4-comic-strip/hw4-spec.html",
+			"type": 0
+		},
+		{
+			"date": "04/17/2019",
+			"name": "Upload 2 PG images to Google Drive folder",
+			"due": "08:30 AM",
+			"link": "https://drive.google.com/drive/folders/1CXAoJsEqoCTOloGXiA-VEij7R_zJLi1Q?usp=sharing",
 			"type": 0
 		},
 		{
