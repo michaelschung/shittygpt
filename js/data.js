@@ -111,7 +111,7 @@ const b1Cal = {
 		},
 		{
 			"date": "04/26/2019",
-			"agenda": "JS: creating HTML elements (continued)"
+			"agenda": "JS: HTML nodes"
 		},
 		{
 			"date": "04/29/2019",
@@ -367,7 +367,7 @@ const b5Cal = {
 		},
 		{
 			"date": "04/25/2019",
-			"agenda": "JS: creating HTML elements (continued)"
+			"agenda": "JS: HTML nodes"
 		},
 		{
 			"date": "04/29/2019",
