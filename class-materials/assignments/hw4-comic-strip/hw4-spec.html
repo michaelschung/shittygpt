@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../css/util.css">
+		<link rel="stylesheet" href="../../../css/assign.css">
+		
+		<title>HW4 Specifications</title>
+	</head>
+		
+	<body>
+		<div class="container">
+			<div class="title-container">
+				<a href="../../../index.html"><img class="home-button" src="../../../img/home.png"></a>
+				<div class="title">HW4: Comic Strip</div>
+			</div>
+			<div class="page">
+				<div class="left col padded">
+					<h3>Due date</h3>
+					<div class="tab">
+						B1: Tuesday, April 16, 8:30 AM<br>
+						B5: Monday, April 15, 10:45 AM
+					</div>
+					
+					<h3>Deliverables</h3>
+					<ul>
+						<li>Code submitted to <a href="https://www.gradescope.com/" target="_blank">Gradescope</a></li>
+					</ul>
+					
+					<h3>Starter code</h3>
+					<div class="tab">
+						<a href="hw4-FirstnameLastname.zip">Download starter code.</a>
+					</div>
+					
+					<br><br><br><br>
+					<h3>Resources</h3>
+					<ul>
+						<li><a href="https://drive.google.com/open?id=1DxfWcJHerFtja52Ce9_QpzKK4VeGmZM7" target="_blank">Class code</a></li>
+						<li><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools HTML Tutorial</a></li>
+						<li><a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS Tutorial</a></li>
+						<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flex positioning tutorial</a></li>
+					</ul>
+				</div>
+				<div class="right col padded">
+					<h2>Overview</h2>
+					In this assignment, you will create a web page that displays a 4-panel comic strip, and allows you to interact with it through the use of buttons.
+					<h2>Requirements</h2>
+					To receive full credit on this assignment, you must replicate the page shown in this video (but feel free to use your own colors):<br><br>
+					<iframe width="800" height="480" src="https://www.youtube.com/embed/twi72gskIKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
+					<h4>Code</h4>
+					<ul>
+						<li>Upon downloading the starter code, you'll notice that there's a decent amount done for you already. Before doing anything else, link the provided HTML and CSS files together, and load the page.</li>
+						<li>Take time to examine the code carefully, and make sure you understand the structure and styling of the page.</li>
+						<li>Change the name of <span class="tt">hw4-FirstnameLastname.html</span> to use your name.</li>
+						<li>The HTML document title (the one that shows up in the browser tab) should be <span class="tt">HW4: Lastname</span> (substitute your last name)</li>
+						<li>From this point on, it is highly recommended that you complete the assignment in the following order of requirements:</li>
+						<ol>
+							<li>There are four folders inside the <span class="tt">img</span> folder, each containing a Calvin &amp; Hobbes comic strip split into four panels. Choose your favorite strip and add those four images into your HTML.</li>
+							<li>Each image should be 300 pixels tall; allow the width to scale itself.</li>
+							<li>By default, the images should be positioned in a row in the center of the image box (the black part of the screen). Pause the video right at the start to see what it should look like.</li>
+							<li>Create a JavaScript file inside the <span class="tt">js</span> subfolder, and link it into your HTML file.</li>
+							<li>Edit the HTML <span class="tt">button</span> tags so that they trigger functions in the JS file when clicked.</li>
+							<li>In the JS file, write the functions to be called by the HTML buttons.</li>
+							<ul>
+								<li>The <span class="tt">Padding</span>, <span class="tt">Border</span>, and <span class="tt">Margin</span> buttons are all <i>toggle</i> buttons, which means that each time one is pressed, it flips its property back and forth between two states.</li>
+								<li>When the <span class="tt">Padding</span> button is pressed, it should toggle between no padding and an 8 pixel padding around each image panel.</li>
+								<li>When the <span class="tt">Border</span> button is pressed, it should toggle between no border and a 3 pixel, solid, <span class="tt">limegreen</span> border around each image panel.</li>
+								<li>When the <span class="tt">Margin</span> button is pressed, it should toggle between no margin and a 10 pixel margin around each image panel.</li>
+								<ul><li><i>Tip: the code for padding/border/margin is all very similar, so choose one of those to focus on first, and then the other two will be almost exactly the same.</i></li></ul>
+								<li>When an arrow button is pressed, the entire comic strip should be pushed in that direction, along with any padding/border/margin that is currently applied. If the middle button is pressed, the strip should return to the center of the image box.</li>
+								<ul><li>Note that if the comic strip has already been pushed, for example, in the upward direction, then a push in the rightward direction would result in the strip being positioned in the upper-right corner of the image box. Thus, there should be 9 distinct positions possible to reach using the arrow keys.</li></ul>
+							</ul>
+							<li>Finally, note that the cursor should turn into a pointer when hovering over any button.</li>
+						</ol>
+					</ul>
+					<h4>Style</h4>
+					Your code will also be graded on style, as usual. Refer to the <a href="../../../html/style-guidelines.html" target="_blank">Style Guidelines</a> for details.
+					<h4>Organization</h4>
+					A small part of your grade will come from good file organization. Refer to the <a href="../../../html/organization-guidelines.html" target="_blank">Organization Guidelines</a> for details.
+					
+					<h2>Tips</h2>
+					Here are some helpful pointers for this assignment:
+					<ul>
+						<li>If you don't remember how to do something, review your code from class or ask questions!</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

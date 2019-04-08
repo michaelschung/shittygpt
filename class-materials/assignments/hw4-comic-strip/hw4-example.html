@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>HW4: Chung</title>
+		<link rel="stylesheet" href="css/hw4.css">
+		<script type=text/javascript src="js/hw4.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="toolbar">
+				<h1>Click a button to change the comic strip</h1>
+				<div class="button-bar">
+					<div class="option" id="border-btn">
+						<button onclick="togglePadding()">Padding</button><br>
+						<button onclick="toggleBorder()">Borders</button><br>
+						<button onclick="toggleMargin()">Margins</button>
+					</div>
+					<div class="option" id="location-btn">
+						<button onclick="moveImage(1)">&uarr;</button><br>
+						<button onclick="moveImage(3)">&larr;</button>
+						<button onclick="moveImage(0)">&bull;</button>
+						<button onclick="moveImage(4)">&rarr;</button><br>
+						<button onclick="moveImage(2)">&darr;</button>
+					</div>
+				</div>
+			</div>
+			<div id="img-box">
+				<img class="panel" src="img/strip1/1-1.png">
+				<img class="panel" src="img/strip1/1-2.png">
+				<img class="panel" src="img/strip1/1-3.png">
+				<img class="panel" src="img/strip1/1-4.png">
+			</div>
+		</div>
+	</body>
+</html>
