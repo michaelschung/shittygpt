@@ -83,11 +83,11 @@ const b1Cal = {
 		},
 		{
 			"date": "04/08/2019",
-			"agenda": "JS: DOM"
+			"agenda": "JS: DOM, buttons"
 		},
 		{
 			"date": "04/10/2019",
-			"agenda": "HTML/JS: labels, button, input, checkboxes, forms"
+			"agenda": "HTML/JS: labels, input, checkboxes, forms"
 		},
 		{
 			"date": "04/12/2019",
@@ -339,11 +339,11 @@ const b5Cal = {
 		},
 		{
 			"date": "04/08/2019",
-			"agenda": "JS: DOM"
+			"agenda": "JS: DOM, buttons"
 		},
 		{
 			"date": "04/09/2019",
-			"agenda": "HTML/JS: labels, button, input, checkboxes, forms"
+			"agenda": "HTML/JS: labels, input, checkboxes, forms"
 		},
 		{
 			"date": "04/11/2019",
