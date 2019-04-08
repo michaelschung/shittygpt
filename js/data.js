@@ -28,7 +28,8 @@ const milsInDay = 1000*60*60*24;
 
 /* Returns the most recent Sunday before the given date */
 function recentSunday(someDate) {
-	someDate.setDate(someDate.getDate() - someDate.getDay());
+	/* -7 so that it shows the previous week too */
+	someDate.setDate(someDate.getDate() - someDate.getDay() - 7);
 	someDate.setHours(0, 0, 0, 0);
 	return someDate;
 }
