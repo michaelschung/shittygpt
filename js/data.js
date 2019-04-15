@@ -480,9 +480,9 @@ const b5Cal = {
 			"type": 0
 		},
 		{
-			"date": "04/15/2019",
+			"date": "04/16/2019",
 			"name": "HW4: Comic Strip",
-			"due": "10:45 AM",
+			"due": "11:59 PM",
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw4-comic-strip/hw4-spec.html",
 			"type": 0
 		},
