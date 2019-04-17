@@ -199,7 +199,6 @@ function adjustGridItemSize() {
 	});
 	
 	/* Make sure links are always clickable */
-	console.log($(".grid-item").children(".due").children());
 	$($(".grid-item").children(".due").children()).css({
 		"z-index": "98"
 	});
