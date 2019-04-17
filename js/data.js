@@ -96,19 +96,19 @@ const b1Cal = {
 		},
 		{
 			"date": "04/16/2019",
-			"agenda": "Responsive web pages"
+			"agenda": "Review problem"
 		},
 		{
 			"date": "04/17/2019",
-			"agenda": "Responsive web pages (continued)"
+			"agenda": "Debugging"
 		},
 		{
 			"date": "04/19/2019",
-			"agenda": "MINI1 work session"
+			"agenda": "HTML input // JS alert, prompt, confirm"
 		},
 		{
 			"date": "04/24/2019",
-			"agenda": "JS: creating HTML elements"
+			"agenda": "Responsive web pages"
 		},
 		{
 			"date": "04/26/2019",
@@ -120,7 +120,7 @@ const b1Cal = {
 		},
 		{
 			"date": "05/01/2019",
-			"agenda": "MINI2 work session"
+			"agenda": "HTML nodes practice problem"
 		},
 		{
 			"date": "05/03/2019",
@@ -222,17 +222,10 @@ const b1Cal = {
 			"type": 0
 		},
 		{
-			"date": "04/19/2019",
-			"name": "MINI1: HW5 Prep",
-			"due": "01:55 PM",
-			"link": "",
-			"type": 1
-		},
-		{
 			"date": "04/24/2019",
-			"name": "HW5: Grocery Store",
+			"name": "PROJ2.5: Inputs",
 			"due": "09:30 AM",
-			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-grocery-store/hw5-spec.html",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B1.pdf",
 			"type": 0
 		},
 		{
@@ -244,22 +237,29 @@ const b1Cal = {
 		},
 		{
 			"date": "05/01/2019",
-			"name": "MINI2: HW6 Prep",
-			"due": "11:20 AM",
+			"name": "HW5 Prep",
+			"due": "10:30 AM",
 			"link": "",
-			"type": 1
+			"type": 0
 		},
 		{
 			"date": "05/03/2019",
-			"name": "HW6: Photo Generator",
+			"name": "HW5: Photo Generator",
 			"due": "10:45 AM",
-			"link": "https://michaelschung.github.io/class-materials/assignments/hw6-photo-generator/hw6-spec.html",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-photo-generator/hw5-spec.html",
 			"type": 0
 		},
 		{
 			"date": "05/07/2019",
-			"name": "HW7: Review Worksheet",
+			"name": "HW6: Review Worksheet (Part 1)",
 			"due": "08:30 AM",
+			"link": "",
+			"type": 0
+		},
+		{
+			"date": "05/08/2019",
+			"name": "HW6: Review Worksheet (Part 2)",
+			"due": "11:30 AM",
 			"link": "",
 			"type": 0
 		},
@@ -359,19 +359,19 @@ const b5Cal = {
 		},
 		{
 			"date": "04/15/2019",
-			"agenda": "Responsive web pages"
+			"agenda": "Review problem"
 		},
 		{
 			"date": "04/17/2019",
-			"agenda": "Responsive web pages (continued)"
+			"agenda": "Review problem (continued)"
 		},
 		{
 			"date": "04/18/2019",
-			"agenda": "MINI1 work session"
+			"agenda": "HTML input // JS alert, prompt, confirm"
 		},
 		{
 			"date": "04/23/2019",
-			"agenda": "JS: creating HTML elements"
+			"agenda": "Debugging // Responsive web pages"
 		},
 		{
 			"date": "04/25/2019",
@@ -383,7 +383,7 @@ const b5Cal = {
 		},
 		{
 			"date": "04/30/2019",
-			"agenda": "MINI2 work session"
+			"agenda": "HTML nodes practice problem"
 		},
 		{
 			"date": "05/02/2019",
@@ -494,44 +494,44 @@ const b5Cal = {
 			"type": 0
 		},
 		{
-			"date": "04/18/2019",
-			"name": "MINI1: HW5 Prep",
-			"due": "03:20 PM",
-			"link": "",
-			"type": 1
-		},
-		{
-			"date": "04/25/2019",
-			"name": "HW5: Grocery Store",
-			"due": "10:45 AM",
-			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-grocery-store/hw5-spec.html",
+			"date": "04/23/2019",
+			"name": "PROJ2.5: Inputs",
+			"due": "12:10 PM",
+			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 0
 		},
 		{
-			"date": "04/29/2019",
+			"date": "04/25/2019",
 			"name": "PROJ3: Responsive Interface",
-			"due": "08:30 AM",
+			"due": "10:45 AM",
 			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 0
 		},
 		{
 			"date": "04/30/2019",
-			"name": "MINI2: HW6 Prep",
-			"due": "03:20 PM",
+			"name": "HW5 Prep",
+			"due": "02:05 PM",
 			"link": "",
-			"type": 1
+			"type": 0
 		},
 		{
 			"date": "05/02/2019",
-			"name": "HW6: Photo Generator",
+			"name": "HW5: Photo Generator",
 			"due": "12:10 PM",
-			"link": "https://michaelschung.github.io/class-materials/assignments/hw6-photo-generator/hw6-spec.html",
+			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-photo-generator/hw5-spec.html",
 			"type": 0
 		},
 		{
 			"date": "05/06/2019",
-			"name": "HW7: Review Worksheet",
+			"name": "HW7: Review Worksheet (Part 1)",
 			"due": "10:45 AM",
+			"link": "",
+			"type": 0
+		},
+		{
+			"date": "05/08/2019",
+			"name": "HW7: Review Worksheet (Part 2)",
+			"due": "08:30 AM",
 			"link": "",
 			"type": 0
 		},
