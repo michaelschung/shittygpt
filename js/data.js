@@ -379,11 +379,11 @@ const b5Cal = {
 		},
 		{
 			"date": "04/29/2019",
-			"agenda": "MINI2 work session"
+			"agenda": "JS: HTML nodes (continued)"
 		},
 		{
 			"date": "04/30/2019",
-			"agenda": "Bringing it all together"
+			"agenda": "MINI2 work session"
 		},
 		{
 			"date": "05/02/2019",
@@ -501,30 +501,30 @@ const b5Cal = {
 			"type": 1
 		},
 		{
-			"date": "04/23/2019",
+			"date": "04/25/2019",
 			"name": "HW5: Grocery Store",
-			"due": "12:10 PM",
+			"due": "10:45 AM",
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-grocery-store/hw5-spec.html",
 			"type": 0
 		},
 		{
-			"date": "04/25/2019",
+			"date": "04/29/2019",
 			"name": "PROJ3: Responsive Interface",
-			"due": "10:45 AM",
+			"due": "08:30 AM",
 			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
 			"type": 0
 		},
 		{
-			"date": "04/29/2019",
+			"date": "04/30/2019",
 			"name": "MINI2: HW6 Prep",
-			"due": "09:45 AM",
+			"due": "03:20 PM",
 			"link": "",
 			"type": 1
 		},
 		{
-			"date": "04/30/2019",
+			"date": "05/01/2019",
 			"name": "HW6: Photo Generator",
-			"due": "02:05 PM",
+			"due": "12:10 PM",
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw6-photo-generator/hw6-spec.html",
 			"type": 0
 		},

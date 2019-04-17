@@ -1,10 +1,10 @@
 /* List of paths to images */
 var posters = [
-	"star-wars.jpg",
-	"inception.jpg",
-	"stitch.jpg",
-	"lotr.jpg",
-	"kuzco.jpg"
+	"img/star-wars.jpg",
+	"img/inception.jpg",
+	"img/stitch.jpg",
+	"img/lotr.jpg",
+	"img/kuzco.jpg"
 ];
 
 /* List of movie titles (same order as posters) */
@@ -14,7 +14,7 @@ var titles = [
 	"Lilo & Stitch",
 	"The Lord of the Rings: The Fellowship of the Ring",
 	"The Emperor's New Groove"
-]
+];
 
 /* Keep track of the index of the current movie */
 var currMovie = 0;
@@ -28,16 +28,14 @@ function changeMovie(dir) {
 	   the index of the last movie. */
 	if (currMovie < 0) {
 		currMovie = posters.length - 1;
+	} else if (currMovie > 4) {
+		currMovie = 0;
 	}
-	
-	/* Mod currMovie by the number of posters */
-	var index = currMovie % posters.length;
 	
 	/* Set the img source using the list of
 	   poster names */
-	var imgSrc = "img/" + posters[index];
-	document.getElementById("poster").src = imgSrc;
+	document.getElementById("poster").src = posters[currMovie];
 	
 	/* Set the title using the list of titles */
-	document.getElementById("title").innerHTML = titles[index];
+	document.getElementById("title").innerHTML = titles[currMovie];
 }
