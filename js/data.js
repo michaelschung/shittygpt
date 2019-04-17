@@ -116,11 +116,11 @@ const b1Cal = {
 		},
 		{
 			"date": "04/29/2019",
-			"agenda": "MINI2 work session"
+			"agenda": "HTML nodes (continued)"
 		},
 		{
 			"date": "05/01/2019",
-			"agenda": "Bringing it all together"
+			"agenda": "MINI2 work session"
 		},
 		{
 			"date": "05/03/2019",
@@ -243,16 +243,16 @@ const b1Cal = {
 			"type": 0
 		},
 		{
-			"date": "04/29/2019",
+			"date": "05/01/2019",
 			"name": "MINI2: HW6 Prep",
-			"due": "03:20 PM",
+			"due": "11:20 AM",
 			"link": "",
 			"type": 1
 		},
 		{
-			"date": "05/01/2019",
+			"date": "05/03/2019",
 			"name": "HW6: Photo Generator",
-			"due": "10:30 AM",
+			"due": "10:45 AM",
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw6-photo-generator/hw6-spec.html",
 			"type": 0
 		},
