@@ -522,7 +522,7 @@ const b5Cal = {
 			"type": 1
 		},
 		{
-			"date": "05/01/2019",
+			"date": "05/02/2019",
 			"name": "HW6: Photo Generator",
 			"due": "12:10 PM",
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw6-photo-generator/hw6-spec.html",
