@@ -180,7 +180,7 @@ function adjustGridItemSize() {
 	});
 	
 	$(".opaque").css({
-		"z-index": "97"
+		"z-index": "96"
 	});
 	
 	$(".today").css({
@@ -189,7 +189,7 @@ function adjustGridItemSize() {
 		"width": "calc(100% - " + itemW/30 + "px)",
 		"height": "calc(100% - " + itemW/30 + "px)",
 		"border": itemW/30 + "px solid red",
-		"z-index": "98"
+		"z-index": "97"
 	});
 	
 	$(".dayOfWeek").css({
@@ -199,7 +199,8 @@ function adjustGridItemSize() {
 	});
 	
 	/* Make sure links are always clickable */
-	$($(".grid-item").children(".due").children()[0]).css({
+	console.log($(".grid-item").children(".due").children());
+	$($(".grid-item").children(".due").children()).css({
 		"z-index": "98"
 	});
 }
