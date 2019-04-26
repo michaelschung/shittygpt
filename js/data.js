@@ -245,9 +245,9 @@ const b1Cal = {
 		{
 			"date": "05/03/2019",
 			"name": "HW5: Photo Generator",
-			"due": "10:45 AM",
+			"due": "11:59 PM",
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-photo-generator/hw5-spec.html",
-			"type": 0
+			"type": 2
 		},
 		{
 			"date": "05/07/2019",
@@ -515,11 +515,11 @@ const b5Cal = {
 			"type": 0
 		},
 		{
-			"date": "05/02/2019",
+			"date": "05/03/2019",
 			"name": "HW5: Photo Generator",
-			"due": "12:10 PM",
+			"due": "11:59 PM",
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-photo-generator/hw5-spec.html",
-			"type": 0
+			"type": 2
 		},
 		{
 			"date": "05/06/2019",

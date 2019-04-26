@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../css/util.css">
+		<link rel="stylesheet" href="../../../css/assign.css">
+		
+		<title>HW5 Specifications</title>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="title-container">
+				<a href="../../../index.html"><img class="home-button" src="../../../img/home.png"></a>
+				<div class="title">HW5: Photo Generator</div>
+			</div>
+			<div class="page">
+				<div class="left col padded">
+					<h3>Due date</h3>
+					<div class="tab">
+						B1: Friday, May 3, 11:59 PM<br>
+						B5: Friday, May 3, 11:59 PM
+					</div>
+					
+					<h3>Deliverables</h3>
+					<ul>
+						<li>Code submitted to <a href="https://www.gradescope.com/" target="_blank">Gradescope</a></li>
+					</ul>
+					
+					<h3>Starter code</h3>
+					<div class="tab">
+						<a href="hw5-FirstnameLastname.zip">Download starter code.</a>
+					</div>
+					
+					<br><br><br><br>
+					<h3>Resources</h3>
+					<ul>
+						<li><a href="https://drive.google.com/open?id=1DxfWcJHerFtja52Ce9_QpzKK4VeGmZM7" target="_blank">Class code</a></li>
+						<li><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools HTML Tutorial</a></li>
+						<li><a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS Tutorial</a></li>
+						<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flex positioning tutorial</a></li>
+						<li><a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">JavaScript HTML DOM</a></li>
+						<li><a href="https://www.w3schools.com/html/html5_webstorage.asp" target="_blank"><span class="tt">localStorage</span></a></li>
+						<li><a href="https://www.w3schools.com/js/js_json_stringify.asp" target="_blank">JSON Stringify</a> and <a href="https://www.w3schools.com/js/js_json_parse.asp" target="_blank">JSON Parse</a></li>
+					</ul>
+				</div>
+				<div class="right col padded">
+					<h2>Overview</h2>
+					In this assignment, you will create a website where you can scroll through images and save some as your favorites. Completing this assignment requires a strong grasp of buttons <span class="tt">localStorage</span>, and HTML redirects.
+					<p>Here is what your assignment should look like at the end:</p>
+					<iframe width="560" height="560" src="https://www.youtube.com/embed/sTHRN9tBass" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+					<hr>
+					
+					<h2>Requirements</h2>
+					To receive full credit on this assignment, you must fulfill the following requirements (feel free to go above and beyond if you want!):
+					<h4>Code</h4>
+					<ul>
+						<li>Change the name of <span class="tt">hw5-FirstnameLastname.html</span> to use your name.</li>
+						<li>The HTML document title (the one that shows up in the browser tab) should be <span class="tt">HW5: Lastname</span> (substitute your last name)</li>
+						<li>Take a close look at the starter code, and make sure you fully understand the organization. Please do not change any of the pre-defined sizing rules in the CSS (for example, don't change the width or height of <span class="tt">#fav-bar</span>), but feel free to change the colors! Also, you'll definitely need to add many more rules.</li>
+						<li>Here are some sizing specifics that you should match:</li>
+						<ul>
+							<li>The header on the main page should be an <span class="tt">&lt;h1&gt;</span> tag in <span class="tt">monospace</span> font with size <span class="tt">30px</span>.</li>
+							<li>The main image on display has the ID <span class="tt">display-img</span>. It should always be <span class="tt">400px</span> tall so that the buttons underneath it do not move when the image changes.</li>
+							<li>The buttons should all be <span class="tt">200px</span> wide, <span class="tt">50px</span> tall, and their text should be size <span class="tt">20px</span>. Each button should also have a <span class="tt">10px</span> margin.</li>
+							<ul>
+								<li>The <span class="tt">Done</span> button should adhere to these rules as well, but it also needs to be stuck to the upper-right corner of the screen.</li>
+							</ul>
+							<li>The bar at the bottom is a <span class="tt">&lt;div&gt;</span> with the ID <span class="tt">fav-bar</span>. Each image in the <span class="tt">fav-bar</span> should be <span class="tt">80px</span> tall, and they should always be centered together.</li>
+							<ul>
+								<li>If there are more favorites than can fit horizontally in the bar, then they should begin to wrap around, but remain centered both horizontally and vertically. Watch the video to see how the wrap should look (it happens at 00:17).</li>
+								<li>Check the flex positioning tutorial page (linked in the sidebar) for how to make items wrap.</li>
+								<li>If you save way too many photos, then eventually there will be too much wrapping, and the photos will start to flood out of the <span class="tt">fav-bar</span>. That's okay! It only needs to look good for up to 2 rows of images.</li>
+							</ul>
+							<li>The new page (the one redirected to after clicking the <span class="tt">Done</span> button) doesn't need any fancy positioning. However, make sure that its header and images get the same stylistic treatment as the header and <span class="tt">fav-bar</span> images from the main page.</li>
+						</ul>
+						<li>This is a complicated assignment, so work on it in steps. See the <b>Tips</b> section below for some robust help on how to break it down.</li>
+					</ul>
+					<h4>Style</h4>
+					Your code will also be graded on style, as usual. Refer to the <a href="../../../html/style-guidelines.html" target="_blank">Style Guidelines</a> for details.
+					<h4>Organization</h4>
+					A small part of your grade will come from good file organization. Refer to the <a href="../../../html/organization-guidelines.html" target="_blank">Organization Guidelines</a> for details.
+					
+					<hr>
+					
+					<h2>Tips</h2>
+					This assignment is pretty complex, so these tips are going to be more helpful than before. Here's a list of the major milestones, and some tips to go along with each. Pay close attention to details, and make sure you complete them in order!
+					<h3>1) <span class="tt">Previous</span> and <span class="tt">Next</span> buttons cycle through the photos</h3>
+					This section is <i>super</i> similar to the "Movie Posters" exercise that we did in class, so go look at your code from that day (the day titled "debugging"). If your code from that day isn't good, <a href="res/4:18%20-%20debugging.zip">take a look at mine</a>.
+					<ul>
+						<li>Notice that the images are all named using the pattern <span class="tt">img#.jpg</span> (where <span class="tt">#</span> is a number between <span class="tt">1</span> and <span class="tt">42</span>), so there's no need to make a list of image names like we did with the movie posters. All you need to keep track of is the number of the current image.</li>
+					</ul>
+					<h3>2) <span class="tt">Save</span> button makes new HTML node in <span class="tt">fav-bar</span></h3>
+					The next task is to make the <span class="tt">Save</span> button work. When clicked, it should figure out which image is currently being displayed, grab the filename, make a new <span class="tt">&lt;img&gt;</span> tag with the same source, and add the new element to the <span class="tt">fav-box</span>.
+					<ul>
+						<li>Remember that CSS rules are automatically applied to all relevant elements, even ones that are added in via JS code.</li>
+						<li>Eventually, the new page will need to have access to all of the favorite photos. Thus, it will be best to store the filenames all together in a single array. Remember that you can use <span class="tt">arr.push(someValue)</span> to add a value to an existing array.</li>
+					</ul>
+					<h3>3) <span class="tt">Done</span> button redirects to new page</h3>
+					When the <span class="tt">Done</span> button is clicked, it should redirect us to a new HTML page.
+					<ul>
+						<li>Make sure that you store the crucial information to <span class="tt">localStorage</span> <i>before</i> redirecting the page.</li>
+						<li>Remember that all <span class="tt">localStorage</span> values must be stored as strings. Use <span class="tt">JSON.stringify(someValue)</span> to turn any value (even an array) into a string. When you want to revert that string back into its original form, use <span class="tt">JSON.parse(strValue)</span>.</li>
+					</ul>
+					<h3>4) New page uses script to load images</h3>
+					When the new page loads, it must call a script to grab the stored filenames and load them into itself.
+					<ul>
+						<li>Add the script from inside the <span class="tt">&lt;body&gt;</span> of the document.</li>
+						<li>Remember that when you link a script from HTML, the script is automatically run in its entirety.</li>
+					</ul>
+					
+					<hr>
+					
+					<h2>Other general tips</h2>
+					<ul>
+						<li>Code a little, test a lot. Test your code after every few lines of new code. Don't write a whole bunch of code and then try to test it all at the same time – that's a surefire way to get yourself lost.</li>
+						<li>Remember to use the console! It'll tell you when there are errors, and you can use it to print things.</li>
+						<li>Speaking of printing, use <span class="tt">console.log()</span> liberally. It's your friend and it'll save your life. If something isn't working, start printing things to make sure they're exactly what you think they are.</li>
+						<li>Be careful with pathnames. Think about which file using the pathname, and direct it accordingly. Remember that you can use <span class="tt">../</span> to get out of the current folder.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
