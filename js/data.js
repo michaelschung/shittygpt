@@ -112,15 +112,15 @@ const b1Cal = {
 		},
 		{
 			"date": "04/26/2019",
-			"agenda": "JS: HTML nodes"
+			"agenda": "JS: redirects, localStorage"
 		},
 		{
 			"date": "04/29/2019",
-			"agenda": "HTML nodes (continued)"
+			"agenda": "JS: stringify, parse"
 		},
 		{
 			"date": "05/01/2019",
-			"agenda": "HTML nodes practice problem"
+			"agenda": "HTML nodes"
 		},
 		{
 			"date": "05/03/2019",
@@ -240,7 +240,7 @@ const b1Cal = {
 			"name": "HW5 Prep",
 			"due": "10:30 AM",
 			"link": "",
-			"type": 0
+			"type": 1
 		},
 		{
 			"date": "05/03/2019",
@@ -302,7 +302,7 @@ const b1Cal = {
 			"name": "TEST: HTML/CSS/JS"
 		}
 	]
-}
+};
 
 /* Data for B5 */
 const b5Cal = {
@@ -375,15 +375,15 @@ const b5Cal = {
 		},
 		{
 			"date": "04/25/2019",
-			"agenda": "JS: HTML nodes"
+			"agenda": "JS: redirects, localStorage"
 		},
 		{
 			"date": "04/29/2019",
-			"agenda": "JS: HTML nodes (continued)"
+			"agenda": "JS: stringify, parse"
 		},
 		{
 			"date": "04/30/2019",
-			"agenda": "HTML nodes practice problem"
+			"agenda": "HTML nodes"
 		},
 		{
 			"date": "05/02/2019",
@@ -512,7 +512,7 @@ const b5Cal = {
 			"name": "HW5 Prep",
 			"due": "02:05 PM",
 			"link": "",
-			"type": 0
+			"type": 1
 		},
 		{
 			"date": "05/03/2019",
