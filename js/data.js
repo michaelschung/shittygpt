@@ -135,6 +135,10 @@ const b1Cal = {
 			"agenda": "HTML/CSS/JS: practice problems"
 		},
 		{
+			"date": "05/11/2019",
+			"agenda": "Project Corrections (optional, due at 11:59pm)"
+		},
+		{
 			"date": "05/14/2019",
 			"agenda": "Project work session"
 		},
@@ -260,13 +264,6 @@ const b1Cal = {
 			"date": "05/08/2019",
 			"name": "HW6: Review Worksheet (Part 2)",
 			"due": "11:30 AM",
-			"link": "",
-			"type": 0
-		},
-		{
-			"date": "05/11/2019",
-			"name": "Project Corrections (optional)",
-			"due": "11:59 PM",
 			"link": "",
 			"type": 0
 		},
@@ -405,6 +402,10 @@ const b5Cal = {
 			"agenda": "HTML/CSS/JS: practice problems"
 		},
 		{
+			"date": "05/11/2019",
+			"agenda": "Project Corrections (optional, due at 11:59pm)"
+		},
+		{
 			"date": "05/13/2019",
 			"agenda": "Project work session"
 		},
@@ -539,13 +540,6 @@ const b5Cal = {
 			"date": "05/08/2019",
 			"name": "HW6: Review Worksheet (Part 2)",
 			"due": "08:30 AM",
-			"link": "",
-			"type": 0
-		},
-		{
-			"date": "05/11/2019",
-			"name": "Project Corrections (optional)",
-			"due": "11:59 PM",
 			"link": "",
 			"type": 0
 		},
