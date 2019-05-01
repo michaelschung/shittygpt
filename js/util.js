@@ -270,7 +270,13 @@
 		return someDate.getDate() == today.getDate() &&
 			   someDate.getMonth() == today.getMonth() &&
 			   someDate.getFullYear() == today.getFullYear();
-	}
+	};
+	
+	Util.isSameDate = (d1, d2) => {
+		return d1.getFullYear() == d2.getFullYear() &&
+			   d1.getMonth() == d2.getMonth() &&
+			   d1.getDate() == d2.getDate();
+	};
 
 	/*
 	 * Returns a local date string
