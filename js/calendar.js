@@ -104,8 +104,10 @@ function setUpCalendar() {
 		 * section if it's a weekday.
 		 */
 		var dayTemplate = [date, agenda];
+		var may4 = new Date("05/04/2019");
 		var may11 = new Date("05/11/2019");
-		if (day.getDay() > 0 && day.getDay() < 6 || Util.isSameDate(day, may11)) {
+		var isSpecial = Util.isSameDate(day, may4) || Util.isSameDate(day, may11);
+		if (day.getDay() > 0 && day.getDay() < 6 || isSpecial) {
 			dayTemplate.push(due);
 		}
 		
