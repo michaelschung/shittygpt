@@ -249,16 +249,16 @@ const b1Cal = {
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-photo-generator/hw5-spec.html",
 			"type": 2
 		},
-		{
-			"date": "05/07/2019",
-			"name": "HW6: Review Worksheet (Part 1)",
-			"due": "08:30 AM",
-			"link": "",
-			"type": 0
-		},
+//		{
+//			"date": "05/07/2019",
+//			"name": "HW6: Review Worksheet (Part 1)",
+//			"due": "08:30 AM",
+//			"link": "",
+//			"type": 0
+//		},
 		{
 			"date": "05/08/2019",
-			"name": "HW6: Review Worksheet (Part 2)",
+			"name": "HW6: Review Worksheet",
 			"due": "11:30 AM",
 			"link": "",
 			"type": 0
@@ -528,16 +528,16 @@ const b5Cal = {
 			"link": "https://michaelschung.github.io/class-materials/assignments/hw5-photo-generator/hw5-spec.html",
 			"type": 2
 		},
-		{
-			"date": "05/06/2019",
-			"name": "HW6: Review Worksheet (Part 1)",
-			"due": "10:45 AM",
-			"link": "",
-			"type": 0
-		},
+//		{
+//			"date": "05/06/2019",
+//			"name": "HW6: Review Worksheet (Part 1)",
+//			"due": "10:45 AM",
+//			"link": "",
+//			"type": 0
+//		},
 		{
 			"date": "05/08/2019",
-			"name": "HW6: Review Worksheet (Part 2)",
+			"name": "HW6: Review Worksheet",
 			"due": "08:30 AM",
 			"link": "",
 			"type": 0
