@@ -260,7 +260,7 @@ const b1Cal = {
 			"date": "05/08/2019",
 			"name": "HW6: Review Worksheet",
 			"due": "11:30 AM",
-			"link": "",
+			"link": "https://michaelschung.github.io/res/spring-review.pdf",
 			"type": 0
 		},
 		{
@@ -539,7 +539,7 @@ const b5Cal = {
 			"date": "05/08/2019",
 			"name": "HW6: Review Worksheet",
 			"due": "08:30 AM",
-			"link": "",
+			"link": "https://michaelschung.github.io/res/spring-review.pdf",
 			"type": 0
 		},
 		{
