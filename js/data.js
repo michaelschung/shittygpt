@@ -285,6 +285,13 @@ const b1Cal = {
 			"type": 0
 		},
 		{
+			"date": "05/21/2019",
+			"name": "Test Corrections",
+			"due": "12:25 PM",
+			"link": "",
+			"type": 0
+		},
+		{
 			"date": "05/22/2019",
 			"name": "PROJ6: Code",
 			"due": "11:59 PM",
@@ -561,6 +568,13 @@ const b5Cal = {
 			"name": "PROJ5: Check-in",
 			"due": "08:30 AM",
 			"link": "https://michaelschung.github.io/res/Spring-Project-B5.pdf",
+			"type": 0
+		},
+		{
+			"date": "05/22/2019",
+			"name": "Test Corrections",
+			"due": "10:30 AM",
+			"link": "",
 			"type": 0
 		},
 		{
