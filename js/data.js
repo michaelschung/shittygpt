@@ -433,11 +433,11 @@ const b5Cal = {
 		},
 		{
 			"date": "05/24/2019",
-			"agenda": "Project presentations!"
+			"agenda": "Project presentations! // Big O // Research Project introduction"
 		},
 		{
 			"date": "05/29/2019",
-			"agenda": "Big O // Research Project introduction"
+			"agenda": "Research Project work session"
 		},
 		{
 			"date": "05/30/2019",
