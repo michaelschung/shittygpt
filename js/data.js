@@ -156,19 +156,19 @@ const b1Cal = {
 		},
 		{
 			"date": "05/28/2019",
-			"agenda": "Class"
+			"agenda": "Big O // Research Project introduction"
 		},
 		{
 			"date": "05/29/2019",
-			"agenda": "Class"
+			"agenda": "Research Project work session"
 		},
 		{
 			"date": "05/31/2019",
-			"agenda": "Review session"
+			"agenda": "Research Project work session"
 		},
 		{
 			"date": "06/05/2019",
-			"agenda": "Exam day"
+			"agenda": "Research Project Presentations"
 		}
 	],
 	"assigns": [
@@ -437,15 +437,15 @@ const b5Cal = {
 		},
 		{
 			"date": "05/29/2019",
-			"agenda": "Class"
+			"agenda": "Big O // Research Project introduction"
 		},
 		{
 			"date": "05/30/2019",
-			"agenda": "Review session"
+			"agenda": "Research Project work session"
 		},
 		{
 			"date": "06/04/2019",
-			"agenda": "Exam day"
+			"agenda": "Research Project Presentations"
 		}
 	],
 	"assigns": [
