@@ -1,7 +1,11 @@
-# Personal website
+# ShittyGPT
 
+## TO RUN
 
+First, fill in the `API_KEY` in `server.js`.
 
-## CL Computer Science, 2019
+```bash
+node server.js
+```
 
-[Click here](https://michaelschung.github.io/clcs-website/index.html) to view the website from the Spring semester of CL Computer Science at Loomis Chaffee.
+This will run the server on `http://localhost:3000` (or whatever port is specified in `server.js`), serving `public/index.html` as the homepage.
