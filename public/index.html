@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="gpt,chatbot,character">
+    <meta name="description" content="bad but customizable chatbot">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>ShittyGPT</title>
+    <link rel="stylesheet" href="/css/pico.jade.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Welcome to ShittyGPT!</h1>
+        <h4>Let's get you set up with a partner.</h4>
+        <div class="container" id="chat_window">
+            <form id="description_form">
+                <fieldset>
+                    <label>
+                        Please describe the type of person you'd like to talk to.
+                        <input
+                            name="description"
+                            placeholder="e.g., an ethereal being from the 14th plane of existence"
+                        />
+                    </label>
+                </fieldset>
+                <input type="submit" value="Chat"/>
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
