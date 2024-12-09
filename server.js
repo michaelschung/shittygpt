@@ -8,6 +8,8 @@ const app = express();
 const port = 3000;
 const API_KEY = "REDACTED"
 
+// OTHER CHANGES
+
 // Middleware
 app.use(cors());
 app.use(express.json());
