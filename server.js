@@ -8,8 +8,6 @@ const app = express();
 const port = 3000;
 const API_KEY = "REDACTED"
 
-// OTHER CHANGES
-
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -19,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // OpenAI configuration
 const openai = new OpenAI({
-    apiKey: API_KEY, // Replace with your actual API key
+    apiKey: API_KEY,
 });
 
 // API route
