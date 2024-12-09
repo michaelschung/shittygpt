@@ -22,14 +22,12 @@ const openai = new OpenAI({
 // API route
 app.post("/api/completion", async (req, res) => {
     try {
-        const { prompt } = req.body;
+        // const { prompt } = req.body;
+        const prompt = req.body;
 
         const completion = await openai.chat.completions.create({
             model: "gpt-4o",
-            messages: [
-                { role: "system", content: "You are a helpful assistant." },
-                { role: "user", content: prompt },
-            ],
+            messages: prompt
         });
 
         res.json({ message: completion.choices[0].message.content });
