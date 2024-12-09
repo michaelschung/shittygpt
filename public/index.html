@@ -22,10 +22,13 @@
                         <input
                             name="description"
                             placeholder="e.g., an ethereal being from the 14th plane of existence"
+                            required
+                            oninvalid="this.setCustomValidity('MUST DO')"
+                            oninput="this.setCustomValidity('')"
                         />
                     </label>
                 </fieldset>
-                <input type="submit" value="Chat"/>
+                <input id="submit_button" type="submit" value="Chat"/>
             </form>
         </div>
     </main>

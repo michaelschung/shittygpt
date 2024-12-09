@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path")
 const OpenAI = require("openai");
+var session = require("express-session");
 
 const app = express();
 const port = 3000;
