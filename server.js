@@ -4,9 +4,12 @@ const path = require("path")
 const OpenAI = require("openai");
 var session = require("express-session");
 
+const dotenv = require("dotenv")
+dotenv.config()
+
 const app = express();
 const port = 3000;
-const API_KEY = "REDACTED"
+const API_KEY = process.env.OPENAI_API_KEY;
 
 // Middleware
 app.use(cors());
