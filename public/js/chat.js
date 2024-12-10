@@ -25,13 +25,17 @@ var ch = new Character();
     document.getElementById("chat_input").focus();
 })();
 
+function newBubble(src, msg) {
+    msgFeed.appendChild(textBubble(src, msg));
+    // Scroll to bottom
+    msgFeed.scrollTop = msgFeed.scrollHeight;
+}
+
 chatInputForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     const message = chatInputForm.elements["chat_input"].value;
     document.getElementById("chat_input").value = "";
-    msgFeed.appendChild(textBubble("user", message));
-    // msgFeed.innerHTML += message;
+    newBubble("user", message);
     const response = await ch.chat(message);
-    msgFeed.appendChild(textBubble("comp", response));
-    // msgFeed.innerHTML += response;
+    newBubble("comp", response);
 })
