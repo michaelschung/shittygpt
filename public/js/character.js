@@ -28,6 +28,18 @@ class Character {
         });
     }
 
+    async chat(userPrompt) {
+        const fullUserPrompt = `
+            Respond to the following prompt in character, using normal
+            English as befits your character. Remember your most prominent
+            character traits, and make sure your messages are not too long
+            (unless your character specifically warrants long messages).
+            Your prompt: ${userPrompt}
+        `;
+        this.addMessage("user", fullUserPrompt);
+        return await this.contextualResponse()
+    }
+
     async contextualResponse() {
         const response = await getCompletionWithContext(this.messages);
         this.addMessage("assistant", response);

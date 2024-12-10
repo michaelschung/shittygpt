@@ -24,3 +24,14 @@ var ch = new Character();
     });
     document.getElementById("chat_input").focus();
 })();
+
+chatInputForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const message = chatInputForm.elements["chat_input"].value;
+    document.getElementById("chat_input").value = "";
+    msgFeed.appendChild(textBubble("user", message));
+    // msgFeed.innerHTML += message;
+    const response = await ch.chat(message);
+    msgFeed.appendChild(textBubble("comp", response));
+    // msgFeed.innerHTML += response;
+})

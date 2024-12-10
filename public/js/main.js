@@ -2,26 +2,9 @@ const chatWindow = document.getElementById("chat_window");
 const descriptionForm = document.getElementById("description_form");
 var ch = null;
 
-async function getCompletionWithContext(msgs) {
-    try {
-        const response = await fetch("http://localhost:3000/api/completion", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(msgs)
-        });
-
-        const data = await response.json();
-        return data.message;
-    } catch (error) {
-        console.error("Error:", error);
-    }
-}
-
 descriptionForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    document.getElementById("submit_button").value = "Please wait while we connect you...";
+    document.getElementById("submit_button").innerHTML = "Please wait while we connect you...";
     const description = descriptionForm.elements["description"].value;
     // Must be done in two parts because constructors cannot be async
     // The await line here waits for the async generateCharacter function
