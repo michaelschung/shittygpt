@@ -24,3 +24,13 @@
     /* user bubbles align right */
     margin-left: auto;
 }
+
+.bubble.sys {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-style: italic;
+    background-color: transparent;
+    color: #777777;
+}

@@ -38,4 +38,8 @@ chatInputForm.addEventListener("submit", async (event) => {
     newBubble("user", message);
     const response = await ch.chat(message);
     newBubble("comp", response);
+    if (message.toLowerCase().includes("bye")) {
+        document.getElementById("chat_input").disabled = true;
+        newBubble("sys", `== ${ch.name} disconnected ==`);
+    }
 })
