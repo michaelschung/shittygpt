@@ -28,12 +28,33 @@ descriptionForm.addEventListener("submit", async (event) => {
     // to finish, at which point we know everything is ready to go.
     ch = new Character();
     await ch.generateCharacter(description);
-    fetch("../html/chat.html")
-        .then(response => response.text())
-        .then(html => {
-            chatWindow.innerHTML = html;
-            document.getElementById("connected_to").innerHTML = `
-                You've been connected to ${ch.name}. Say hi!
-            `;
-        });
+    fetch("http://localhost:3000/api/save-character", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(ch.encode())
+    })
+    .then((response) => {
+        if (response.ok) {
+            window.location.href = "../html/chat.html";
+        } else {
+            throw new Error("Failed to save character.");
+        }
+    })
+    .catch((error) => {
+        console.error("Error:", error);
+    });
+    // .then((response) => response.json())
+    // .then((data) => console.log(data))
+    // .catch((error) => console.error("Error:", error));
+    
+    // fetch("../html/chat.html")
+    // .then(response => response.text())
+    // .then(html => {
+    //     chatWindow.innerHTML = html;
+    //     document.getElementById("connected_to").innerHTML = `
+    //         You've been connected to ${ch.name}. Say hi!
+    //     `;
+    // });
 });

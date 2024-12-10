@@ -1,8 +1,24 @@
 class Character {
     constructor() {
-        this.messages = [];
         this.name = "";
         this.backstory = "";
+        this.messages = [];
+    }
+
+    // Encode Character as serializable object
+    encode() {
+        return {
+            name: this.name,
+            backstory: this.backstory,
+            messages: this.messages
+        };
+    }
+
+    // Decode serializable object as Character
+    decode(obj) {
+        this.name = obj.name;
+        this.backstory = obj.backstory;
+        this.messages = obj.messages;
     }
 
     addMessage(role, content) {
