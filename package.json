@@ -1,0 +1,19 @@
+{
+  "name": "shittygpt",
+  "version": "1.0.0",
+  "description": "a bad version of chatgpt - or maybe more like character ai",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Michael Chung",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "openai": "^4.76.1"
+  }
+}
