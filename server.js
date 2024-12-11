@@ -10,6 +10,7 @@ dotenv.config()
 const app = express();
 const port = 3000;
 
+// If running locally, use .env variables
 const TESTING = process.env.ENV == "local";
 const API_KEY = process.env.OPENAI_API_KEY;
 
@@ -31,9 +32,6 @@ app.use(
 
 // OpenAI configuration
 var openai = null;
-// const openai = new OpenAI({
-//     apiKey: API_KEY,
-// });
 
 app.post("/api/load-api-key", async (req, res) => {
     try {
