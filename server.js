@@ -9,8 +9,9 @@ dotenv.config()
 
 const app = express();
 const port = 3000;
-// const API_KEY = process.env.OPENAI_API_KEY;
-const API_KEY = "placeholder";
+
+const TESTING = process.env.ENV == "local";
+const API_KEY = process.env.OPENAI_API_KEY;
 
 // Middleware
 app.use(cors());
@@ -39,7 +40,7 @@ app.post("/api/load-api-key", async (req, res) => {
         const key = req.body["key"];
 
         openai = new OpenAI({
-            apiKey: key
+            apiKey: TESTING ? API_KEY : key
         });
 
         const completion = await openai.chat.completions.create({
