@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="modal-is-open modal-is-opening">
 <head>
     <meta charset="utf-8"/>
     <meta name="keywords" content="gpt,chatbot,character">
@@ -11,6 +11,25 @@
     <link rel="stylesheet" href="/css/pico.jade.min.css">
 </head>
 <body>
+    <dialog id="api_key_modal" open>
+        <article>
+            <h2 id="modal_text">Enter your API key</h2>
+            <form id="api_key_form">
+                <input
+                    id="api_key_input"
+                    name="api_key"
+                    placeholder="blah-blah-blah"
+                    required
+                    oninvalid="this.setCustomValidity('MUST DO')"
+                    oninput="this.setCustomValidity('')"
+                />
+                <footer>
+                    <button id="submit_api_key" type="submit">Submit</button>
+                </footer>
+            </form>
+        </article>
+    </dialog>
+
     <main class="container">
         <h1>Welcome to ShittyGPT!</h1>
         <div class="container" id="chat_window">

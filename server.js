@@ -9,7 +9,8 @@ dotenv.config()
 
 const app = express();
 const port = 3000;
-const API_KEY = process.env.OPENAI_API_KEY;
+// const API_KEY = process.env.OPENAI_API_KEY;
+const API_KEY = "placeholder";
 
 // Middleware
 app.use(cors());
@@ -28,11 +29,34 @@ app.use(
 );
 
 // OpenAI configuration
-const openai = new OpenAI({
-    apiKey: API_KEY,
+var openai = null;
+// const openai = new OpenAI({
+//     apiKey: API_KEY,
+// });
+
+app.post("/api/load-api-key", async (req, res) => {
+    try {
+        const key = req.body["key"];
+
+        openai = new OpenAI({
+            apiKey: key
+        });
+
+        const completion = await openai.chat.completions.create({
+            model: "gpt-4o",
+            messages: [
+                {"role": "system", "content": "This is a system test."},
+                {"role": "user", "content": "This is a system test."}
+            ]
+        });
+
+        res.json({ message: completion.choices[0].message.content });
+    } catch (error) {
+        console.error("Error:", error);
+        res.status(500).json({ error: "Something went wrong" });
+    }
 });
 
-// API route
 app.post("/api/completion", async (req, res) => {
     try {
         const prompt = req.body;

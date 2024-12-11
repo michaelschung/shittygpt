@@ -1,10 +1,55 @@
 const chatWindow = document.getElementById("chat_window");
 const descriptionForm = document.getElementById("description_form");
+const apiKeyForm = document.getElementById("api_key_form");
 var ch = null;
 
 (function() {
-    document.getElementById("description_input").focus();
+    modal("open");
 })();
+
+function modal(action, message="Enter your API key") {
+    document.documentElement.className = "";
+    if (action == "open") {
+        document.documentElement.classList.add("modal-is-open", "modal-is-opening");
+        document.getElementById("api_key_modal").setAttribute("open", "");
+        document.getElementById("modal_text").innerHTML = message;
+        document.getElementById("api_key_input").focus();
+    } else {
+        document.documentElement.classList.add("modal-is-closing");
+        document.getElementById("api_key_modal").removeAttribute("open");
+        document.getElementById("description_input").focus();
+    }
+}
+
+apiKeyForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    document.getElementById("submit_api_key").innerHTML = "Checking API key...";
+
+    const apiKey = apiKeyForm.elements["api_key"].value;
+    console.log(apiKey);
+    await fetch("http://localhost:3000/api/load-api-key", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({key: apiKey})
+    })
+    .then((response) => {
+        if (response.ok) {
+            console.log("API key accepted");
+            modal("close");
+        } else {
+            throw new Error("Invalid API key.");
+        }
+    })
+    .catch((error) => {
+        console.error("Error:", error);
+        modal("open", "Invalid API key. Try again.");
+        document.getElementById("submit_api_key").innerHTML = "Submit";
+        document.getElementById("api_key_input").value = "";
+    });
+});
 
 descriptionForm.addEventListener("submit", async (event) => {
     event.preventDefault();
