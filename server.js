@@ -74,6 +74,18 @@ app.get("/api/get-character", (req, res) => {
     }
 });
 
+// Route to end the entire session
+app.post("/api/end-session", (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+            return res.status(500).json({ message: "Failed to end session." });
+        }
+        // Send a response indicating session has been destroyed
+        res.json({ message: "Session ended successfully." });
+    });
+});
+  
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);

@@ -15,6 +15,19 @@ async function getCompletionWithContext(msgs) {
     }
 }
 
+function endSession() {
+    fetch("http://localhost:3000/api/end-session", {
+        method: "POST"
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.message);
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+}
+
 function textBubble(source, message) {
     const bubble = document.createElement("article");
     bubble.classList.add("bubble", source);

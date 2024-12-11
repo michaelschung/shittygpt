@@ -8,6 +8,7 @@ var ch = new Character();
     fetch("http://localhost:3000/api/get-character")
     .then((response) => {
         if (!response.ok) {
+            disableInputs();
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         return response.json();
@@ -21,6 +22,9 @@ var ch = new Character();
     })
     .catch((error) => {
         console.error("Error fetching character data:", error);
+        document.getElementById("connected_to").innerHTML = `
+            Not connected to a partner. <a href="../index.html">Start a new chat</a>.
+        `;
     });
     document.getElementById("chat_input").focus();
 })();
@@ -31,6 +35,11 @@ function newBubble(src, msg) {
     msgFeed.scrollTop = msgFeed.scrollHeight;
 }
 
+function disableInputs() {
+    document.getElementById("send_button").disabled = true;
+    document.getElementById("chat_input").disabled = true;
+}
+
 chatInputForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     const message = chatInputForm.elements["chat_input"].value;
@@ -39,7 +48,8 @@ chatInputForm.addEventListener("submit", async (event) => {
     const response = await ch.chat(message);
     newBubble("comp", response);
     if (message.toLowerCase().includes("bye")) {
-        document.getElementById("chat_input").disabled = true;
+        disableInputs();
         newBubble("sys", `== ${ch.name} disconnected ==`);
+        endSession();
     }
 })

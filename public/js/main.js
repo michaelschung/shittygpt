@@ -2,6 +2,10 @@ const chatWindow = document.getElementById("chat_window");
 const descriptionForm = document.getElementById("description_form");
 var ch = null;
 
+(function() {
+    document.getElementById("description_input").focus();
+})();
+
 descriptionForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     document.getElementById("submit_button").innerHTML = "Please wait while we connect you...";
