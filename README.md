@@ -2,8 +2,6 @@
 
 ## TO RUN
 
-First, fill in the `API_KEY` in `server.js`, then run this command:
-
 ```bash
 node server.js
 ```
