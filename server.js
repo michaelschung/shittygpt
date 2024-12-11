@@ -33,6 +33,7 @@ app.use(
 // OpenAI configuration
 var openai = null;
 
+// Accepts API key, initializes OpenAI object and makes test request
 app.post("/api/load-api-key", async (req, res) => {
     try {
         const key = req.body["key"];
@@ -56,6 +57,7 @@ app.post("/api/load-api-key", async (req, res) => {
     }
 });
 
+// The grand function that actually makes OpenAI requests
 app.post("/api/completion", async (req, res) => {
     try {
         const prompt = req.body;
@@ -72,23 +74,21 @@ app.post("/api/completion", async (req, res) => {
     }
 });
 
+// Save Character data in Express session storage
 app.post("/api/save-character", (req, res) => {
-    // Extract the data sent by the client
+    // Extract data sent by the client
     const characterData = req.body;
 
-    // Check if the data is valid (e.g., is a dictionary)
+    // Check if the data is valid (i.e., is a dictionary)
     if (characterData && typeof characterData === "object") {
-        // Store it in the session
         req.session.character = characterData;
-
-        // Send a success response
         res.status(200).json({ message: "Character saved successfully." });
     } else {
-        // Handle invalid data
         res.status(400).json({ error: "Invalid character data." });
     }
 });
 
+// Load Character data from session storage
 app.get("/api/get-character", (req, res) => {
     if (req.session.character) {
         res.status(200).json(req.session.character);
@@ -97,18 +97,16 @@ app.get("/api/get-character", (req, res) => {
     }
 });
 
-// Route to end the entire session
+// Ends entire Express session
 app.post("/api/end-session", (req, res) => {
     req.session.destroy((err) => {
         if (err) {
             return res.status(500).json({ message: "Failed to end session." });
         }
-        // Send a response indicating session has been destroyed
         res.json({ message: "Session ended successfully." });
     });
 });
   
-
 // Start the server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);

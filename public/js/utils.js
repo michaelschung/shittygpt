@@ -1,3 +1,4 @@
+// Forwards list of messages to API, to send to OpenAI
 async function getCompletionWithContext(msgs) {
     try {
         const response = await fetch("http://localhost:3000/api/completion", {
@@ -15,6 +16,7 @@ async function getCompletionWithContext(msgs) {
     }
 }
 
+// Makes API call to end session
 function endSession() {
     fetch("http://localhost:3000/api/end-session", {
         method: "POST"

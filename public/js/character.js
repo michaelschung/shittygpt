@@ -21,6 +21,7 @@ class Character {
         this.messages = obj.messages;
     }
 
+    // Updates `this.messages` with appropriate context record
     addMessage(role, content) {
         this.messages.push({
             "role": role,
@@ -28,6 +29,8 @@ class Character {
         });
     }
 
+    // Gives slightly more instructions surrounding user prompt, and
+    // updates `this.messages` to keep track of context.
     async chat(userPrompt) {
         const fullUserPrompt = `
             Respond to the following prompt in character, using normal
@@ -40,12 +43,16 @@ class Character {
         return await this.contextualResponse()
     }
 
+    // Send prompt with context to OpenAI, return response
+    // Assumes that last message in `this.messages` is the user's latest
+    // prompt, and updates `this.messages` to keep track of context.
     async contextualResponse() {
         const response = await getCompletionWithContext(this.messages);
         this.addMessage("assistant", response);
         return response;
     }
 
+    // Initializes character with actual name and backstory, begins context
     async generateCharacter(description) {
         const sysPrompt = `
             You are described as "${description}." Please respond to the next
