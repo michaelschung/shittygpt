@@ -27,10 +27,3 @@ function endSession() {
         console.error("Error:", error);
     });
 }
-
-function textBubble(source, message) {
-    const bubble = document.createElement("article");
-    bubble.classList.add("bubble", source);
-    bubble.textContent = message;
-    return bubble;
-}

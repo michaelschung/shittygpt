@@ -32,16 +32,4 @@ descriptionForm.addEventListener("submit", async (event) => {
     .catch((error) => {
         console.error("Error:", error);
     });
-    // .then((response) => response.json())
-    // .then((data) => console.log(data))
-    // .catch((error) => console.error("Error:", error));
-    
-    // fetch("../html/chat.html")
-    // .then(response => response.text())
-    // .then(html => {
-    //     chatWindow.innerHTML = html;
-    //     document.getElementById("connected_to").innerHTML = `
-    //         You've been connected to ${ch.name}. Say hi!
-    //     `;
-    // });
 });
