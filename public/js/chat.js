@@ -8,7 +8,6 @@ var ch = new Character();
     fetch("http://localhost:3000/api/get-character")
     .then((response) => {
         if (!response.ok) {
-            disableInputs();
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         return response.json();
@@ -25,6 +24,7 @@ var ch = new Character();
         document.getElementById("connected_to").innerHTML = `
             Not connected to a partner. <a href="../index.html">Start a new chat</a>.
         `;
+        disableInputs();
     });
     document.getElementById("chat_input").focus();
 })();
