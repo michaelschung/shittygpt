@@ -127,7 +127,13 @@ app.post("/api/end-session", (req, res) => {
         openai = null;
     });
 });
-  
+
+// Reset session last access time (for auto-timeout)
+app.post('/api/reset-session', (req, res) => {
+    req.session.touch();
+    res.sendStatus(200);
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

@@ -5,6 +5,7 @@ var ch = null;
 
 // Open modal when page loads
 (function() {
+    resetTimer();
     destroyCharacter();
     
     fetch(`${apiBaseUrl}/check-init`)
@@ -35,6 +36,7 @@ function modal(action, message="Enter your API key") {
 // Response to user entering API key
 apiKeyForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+    resetTimer();
 
     document.getElementById("submit_api_key").innerHTML = "Checking API key...";
     const apiKey = apiKeyForm.elements["api_key"].value;
@@ -67,6 +69,7 @@ apiKeyForm.addEventListener("submit", async (event) => {
 // Response to user entering character description
 descriptionForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+    resetTimer();
 
     document.getElementById("submit_button").innerHTML = "Please wait while we connect you...";
     const description = descriptionForm.elements["description"].value;
