@@ -5,7 +5,16 @@ var ch = null;
 
 // Open modal when page loads
 (function() {
-    modal("open");
+    destroyCharacter();
+    
+    fetch(`${apiBaseUrl}/check-init`)
+    .then((response) => {
+        if (!response.ok) {
+            modal("open");
+        } else {
+            modal("close");
+        }
+    })
 })();
 
 // Open/close modal, with option to set message

@@ -76,6 +76,6 @@ chatInputForm.addEventListener("submit", async (event) => {
         disableInputs();
         newBubble(textBubble("sys", `== ${ch.name} disconnected ==`));
         newBubble(startNewChatBubble());
-        endSession();
+        destroyCharacter();
     }
 })

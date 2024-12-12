@@ -1,5 +1,4 @@
 const apiBaseUrl = `${window.location.origin}/api`;
-console.log(apiBaseUrl);
 
 // Forwards list of messages to API, to send to OpenAI
 async function getCompletionWithContext(msgs) {
@@ -17,6 +16,20 @@ async function getCompletionWithContext(msgs) {
     } catch (error) {
         console.error("Error:", error);
     }
+}
+
+// Makes API call to destroy current character
+function destroyCharacter() {
+    fetch(`${apiBaseUrl}/destroy-character`, {
+        method: "POST"
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.message);
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
 }
 
 // Makes API call to end session

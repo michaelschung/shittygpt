@@ -10,7 +10,7 @@ dotenv.config()
 const app = express();
 const defaultPort = 3000;
 
-// If running locally, use .env variables
+// Config is different if running locally
 const TESTING = process.env.ENV == "local";
 const API_KEY = process.env.OPENAI_API_KEY;
 const PORT = TESTING ? defaultPort : process.env.PORT;
@@ -34,6 +34,15 @@ app.use(
 // OpenAI configuration
 var openai = null;
 
+// Checks if OpenAI object has already been initialized
+app.get("/api/check-init", async (req, res) => {
+    if (openai) {
+        res.status(200).json({ message: "Already have API key" });
+    } else {
+        res.status(404).json({ message: "First load" });
+    }
+});
+
 // Accepts API key, initializes OpenAI object and makes test request
 app.post("/api/load-api-key", async (req, res) => {
     try {
@@ -55,6 +64,7 @@ app.post("/api/load-api-key", async (req, res) => {
     } catch (error) {
         console.error("Error:", error);
         res.status(500).json({ error: "Something went wrong" });
+        openai = null;
     }
 });
 
@@ -98,6 +108,16 @@ app.get("/api/get-character", (req, res) => {
     }
 });
 
+// Destroy current Character (when chat is over)
+app.post("/api/destroy-character", (req, res) => {
+    if (req.session.character) {
+        delete req.session.character;
+        res.status(200).json({ message: "Successfully destroyed character." })
+    } else {
+        res.status(404).json({ message: "No character to destroy." });
+    }
+});
+
 // Ends entire Express session
 app.post("/api/end-session", (req, res) => {
     req.session.destroy((err) => {
@@ -105,6 +125,7 @@ app.post("/api/end-session", (req, res) => {
             return res.status(500).json({ message: "Failed to end session." });
         }
         res.json({ message: "Session ended successfully." });
+        openai = null;
     });
 });
   
