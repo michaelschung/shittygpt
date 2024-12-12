@@ -10,8 +10,7 @@ dotenv.config()
 const app = express();
 const defaultPort = 3000;
 
-// Config is different if running locally
-const TESTING = process.env.ENV == "local";
+// Pick up environment variables (if they exist)
 const API_KEY = process.env.OPENAI_API_KEY;
 const PORT = process.env.PORT || defaultPort;
 
