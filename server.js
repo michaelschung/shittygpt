@@ -13,7 +13,7 @@ const defaultPort = 3000;
 // Config is different if running locally
 const TESTING = process.env.ENV == "local";
 const API_KEY = process.env.OPENAI_API_KEY;
-const PORT = TESTING ? defaultPort : process.env.PORT;
+const PORT = process.env.PORT || defaultPort;
 
 // Middleware
 app.use(cors());
@@ -49,7 +49,7 @@ app.post("/api/load-api-key", async (req, res) => {
         const key = req.body["key"];
 
         openai = new OpenAI({
-            apiKey: TESTING ? API_KEY : key
+            apiKey: API_KEY || key
         });
 
         const completion = await openai.chat.completions.create({
