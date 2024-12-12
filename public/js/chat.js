@@ -1,6 +1,7 @@
 const chatWindow = document.getElementById("chat_window");
 const msgFeed = document.getElementById("message_feed");
 const chatInputForm = document.getElementById("chat_input_form");
+const disconnectBtn = document.getElementById("disconnect_btn");
 var ch = new Character();
 
 // Onload - grab Character object from session storage
@@ -80,4 +81,9 @@ chatInputForm.addEventListener("submit", async (event) => {
         newBubble(startNewChatBubble());
         destroyCharacter();
     }
+});
+
+// Disconnect from current chat, return home
+disconnectBtn.addEventListener("click", () => {
+    window.location.href = window.location.origin;
 })
