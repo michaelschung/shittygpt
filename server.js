@@ -8,12 +8,12 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 const app = express();
-const defaultPort = 5001;
+const defaultPort = 3000;
 
 // If running locally, use .env variables
 const TESTING = process.env.ENV == "local";
 const API_KEY = process.env.OPENAI_API_KEY;
-const PORT = TESTING ? process.env.PORT : defaultPort;
+const PORT = TESTING ? defaultPort : process.env.PORT;
 
 // Middleware
 app.use(cors());
