@@ -8,11 +8,12 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 const app = express();
-const port = 3000;
+// const port = 3000;
 
 // If running locally, use .env variables
 const TESTING = process.env.ENV == "local";
 const API_KEY = process.env.OPENAI_API_KEY;
+const PORT = process.env.PORT;
 
 // Middleware
 app.use(cors());
@@ -108,6 +109,6 @@ app.post("/api/end-session", (req, res) => {
 });
   
 // Start the server
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });
