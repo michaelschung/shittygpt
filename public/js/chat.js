@@ -5,8 +5,6 @@ var ch = new Character();
 
 // Onload - grab Character object from session storage
 (function() {
-    resetTimer();
-
     fetch(`${apiBaseUrl}/get-character`)
     .then((response) => {
         if (!response.ok) {
@@ -69,7 +67,7 @@ function disableInputs() {
 chatInputForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     resetTimer();
-    
+
     const message = chatInputForm.elements["chat_input"].value;
     document.getElementById("chat_input").value = "";
     newBubble(textBubble("user", message));

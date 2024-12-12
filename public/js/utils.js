@@ -55,6 +55,3 @@ function endSession() {
     });
     console.log("Session ended due to inactivity.");
 }
-
-// Reset timer when page loads
-resetTimer();

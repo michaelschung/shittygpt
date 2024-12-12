@@ -5,7 +5,6 @@ var ch = null;
 
 // Open modal when page loads
 (function() {
-    resetTimer();
     destroyCharacter();
     
     fetch(`${apiBaseUrl}/check-init`)
