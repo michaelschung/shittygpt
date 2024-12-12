@@ -5,7 +5,7 @@ var ch = new Character();
 
 // Onload - grab Character object from session storage
 (function() {
-    fetch("http://localhost:3000/api/get-character")
+    fetch(`${apiBaseUrl}/get-character`)
     .then((response) => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);

@@ -31,7 +31,7 @@ apiKeyForm.addEventListener("submit", async (event) => {
     const apiKey = apiKeyForm.elements["api_key"].value;
 
     // Access API endpoint to load API key into OpenAI object
-    fetch("http://localhost:3000/api/load-api-key", {
+    fetch(`${apiBaseUrl}/load-api-key`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -69,7 +69,7 @@ descriptionForm.addEventListener("submit", async (event) => {
     await ch.generateCharacter(description);
 
     // Access API endpoint to save character info to Express session
-    fetch("http://localhost:3000/api/save-character", {
+    fetch(`${apiBaseUrl}/save-character`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

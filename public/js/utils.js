@@ -1,7 +1,10 @@
+const apiBaseUrl = `${window.location.origin}/api`;
+console.log(apiBaseUrl);
+
 // Forwards list of messages to API, to send to OpenAI
 async function getCompletionWithContext(msgs) {
     try {
-        const response = await fetch("http://localhost:3000/api/completion", {
+        const response = await fetch(`${apiBaseUrl}/completion`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -18,7 +21,7 @@ async function getCompletionWithContext(msgs) {
 
 // Makes API call to end session
 function endSession() {
-    fetch("http://localhost:3000/api/end-session", {
+    fetch(`${apiBaseUrl}/end-session`, {
         method: "POST"
     })
     .then(response => response.json())
