@@ -86,4 +86,4 @@ chatInputForm.addEventListener("submit", async (event) => {
 // Disconnect from current chat, return home
 disconnectBtn.addEventListener("click", () => {
     window.location.href = window.location.origin;
-})
+});
