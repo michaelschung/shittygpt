@@ -1,4 +1,4 @@
-# ShittyGPT
+# BadGPT
 
 A silly little web app that lets you customize a chatbot to assume whatever personality you specify. Basically Character.AI but worse?
 
