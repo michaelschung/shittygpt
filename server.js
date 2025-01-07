@@ -24,18 +24,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Session setup
 app.use(
     session({
-        secret: "something-secret", // Replace with a secure secret
+        secret: "something-secret",
         resave: false,
         saveUninitialized: true,
     })
 );
 
 // OpenAI configuration
-var openai = null;
+var openai = API_KEY ? new OpenAI({ apiKey: API_KEY }) : null;
 
 // Checks if OpenAI object has already been initialized
 app.get("/api/check-init", async (req, res) => {
-    if (openai) {
+    if (openai || API_KEY) {
         res.status(200).json({ message: "Already have API key" });
     } else {
         res.status(404).json({ message: "First load" });
