@@ -52,7 +52,7 @@ app.post("/api/load-api-key", async (req, res) => {
         });
 
         const completion = await openai.chat.completions.create({
-            model: "gpt-4o",
+            model: "gpt-4o-mini",
             messages: [
                 {"role": "system", "content": "This is a system test."},
                 {"role": "user", "content": "This is a system test."}
