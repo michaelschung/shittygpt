@@ -9,6 +9,7 @@ Built using Node.js, Express.js, and the OpenAI API.
 - [Try it out!](#try-it-out)
 - [Technical overview](#technical-overview)
 - [Local development](#local-development)
+- [Roadmap](#roadmap)
 - [Disclaimer](#disclaimer)
 
 ## [Try it out!](https://shittygpt-6cce0109198e.herokuapp.com/)
@@ -54,6 +55,10 @@ npm start
 ```
 
 This will run the server on [`localhost:3000`](http://localhost:3000/) (or whichever port is specified in `server.js`), serving `public/index.html` as the homepage.
+
+## Roadmap
+
+There's one primary change that I'd like to make in a future version: update the chat interface to [stream](https://platform.openai.com/docs/api-reference/streaming) each character response to the user, rather than populating an entire chat bubble at once.
 
 ## Disclaimer
 
